@@ -1,0 +1,16 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 7,
+    "name": "Body Scrubs and Wraps",
+    "description": "Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.",
+    "duration": 90,
+    "minimum_duration": 1,
+    "price_per_hour": 100000,
+    "image": "{{MOCK_URL}}/static/images/service-7.jpg",
+    "icon": "{{MOCK_URL}}/static/images/service-icon-07.png"
+}

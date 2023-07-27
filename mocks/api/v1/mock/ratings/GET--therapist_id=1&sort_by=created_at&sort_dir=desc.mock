@@ -1,0 +1,30 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 2,
+        "order_id": 2,
+        "rating": 4,
+        "note": "Pelayanan cukup acceptable, namun perlu ada peningkatan.",
+        "created_at": "2023-06-04T10:00:00+07:00",
+        "updated_at": "2023-06-04T10:00:00+07:00",
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "user_first_name": "Bintang",
+        "user_last_name": "Kejora"
+    },
+    {
+        "id": 1,
+        "order_id": 1,
+        "rating": 3,
+        "note": "Jasa pijat ini luar biasa! Saya memesan paket pijat refleksi selama satu jam dan saya tidak menyesal sama sekali. Terapisnya ahli dalam memijat kaki, tangan, dan kepala saya dengan tekanan yang pas. Saya bisa merasakan aliran darah dan energi saya meningkat. Ruangannya juga nyaman dengan musik dan aroma yang menenangkan. Saya pasti akan kembali lagi.",
+        "created_at": "2023-06-03T10:00:00+07:00",
+        "updated_at": "2023-06-03T10:00:00+07:00",
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "user_first_name": "Bintang",
+        "user_last_name": "Kejora"
+    }
+]

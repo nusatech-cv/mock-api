@@ -1,0 +1,133 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 2,
+        "first_name": "Budi",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.1,
+            "y": 110.125
+        },
+        "experience_years": 7,
+        "photo": "{{MOCK_URL}}/static/images/therapist-2.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 3,
+                "name": "Hot Stone Massage"
+            },
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "first_name": "Danu",
+        "last_name": "Santoso",
+        "location": {
+            "x": -6.9,
+            "y": 110.35
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-6.jpg",
+        "age": 28,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "first_name": "Lina",
+        "last_name": "Susanti",
+        "location": {
+            "x": -7.0021,
+            "y": 110.4067
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-11.jpg",
+        "age": 29,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.00",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "first_name": "Ratna",
+        "last_name": "Widodo",
+        "location": {
+            "x": -7.0221,
+            "y": 110.4098
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-13.jpg",
+        "age": 28,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "first_name": "Ratih",
+        "last_name": "Setiawan",
+        "location": {
+            "x": -7.0196,
+            "y": 110.4034
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-17.jpg",
+        "age": 28,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    }
+]

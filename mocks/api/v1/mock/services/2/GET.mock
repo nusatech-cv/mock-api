@@ -1,0 +1,16 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Swedish Massage",
+    "description": "Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.",
+    "duration": 60,
+    "minimum_duration": 1,
+    "price_per_hour": 400000,
+    "image": "{{MOCK_URL}}/static/images/service-2.png",
+    "icon": "{{MOCK_URL}}/static/images/service-icon-02.png"
+}

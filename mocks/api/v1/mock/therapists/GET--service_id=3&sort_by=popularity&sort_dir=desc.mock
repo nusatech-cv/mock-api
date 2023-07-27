@@ -1,0 +1,83 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 2,
+        "first_name": "Budi",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.1,
+            "y": 110.125
+        },
+        "experience_years": 7,
+        "photo": "{{MOCK_URL}}/static/images/therapist-2.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 3,
+                "name": "Hot Stone Massage"
+            },
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "first_name": "Ratna",
+        "last_name": "Wijaya",
+        "location": {
+            "x": -7.025,
+            "y": 110.4
+        },
+        "experience_years": 9,
+        "photo": "{{MOCK_URL}}/static/images/therapist-7.jpg",
+        "age": 31,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 3,
+                "name": "Hot Stone Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "first_name": "Rina",
+        "last_name": "Wijaya",
+        "location": {
+            "x": -6.9873,
+            "y": 110.4117
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-15.jpg",
+        "age": 29,
+        "gender": "female",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 3,
+                "name": "Hot Stone Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    }
+]

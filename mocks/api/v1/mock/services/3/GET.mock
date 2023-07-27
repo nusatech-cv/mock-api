@@ -1,0 +1,16 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Hot Stone Massage",
+    "description": "Hot Stone Massage adalah jenis terapi pijat yang menggunakan batu panas sebagai alat utama. Batu-batu tersebut, biasanya batu basalt yang telah dipanaskan, ditempatkan pada titik-titik tertentu di seluruh tubuh untuk membantu meredakan ketegangan otot dan meningkatkan aliran darah. Teknik ini menghasilkan sensasi hangat yang mendalam dan relaksasi yang nyaman, sehingga sangat efektif untuk membantu meredakan stres dan meningkatkan kesejahteraan secara keseluruhan.",
+    "duration": 90,
+    "minimum_duration": 1,
+    "price_per_hour": 700000,
+    "image": "{{MOCK_URL}}/static/images/service-3.avif",
+    "icon": "{{MOCK_URL}}/static/images/service-icon-03.png"
+}

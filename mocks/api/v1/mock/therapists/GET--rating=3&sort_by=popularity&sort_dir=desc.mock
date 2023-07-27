@@ -1,0 +1,508 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 1,
+        "first_name": "Dewi",
+        "last_name": "Sulistiani",
+        "location": {
+            "x": -7.01,
+            "y": 110.5
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-1.jpg",
+        "age": 28,
+        "gender": "female",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 2,
+                "name": "Swedish Massage"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "first_name": "Budi",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.1,
+            "y": 110.125
+        },
+        "experience_years": 7,
+        "photo": "{{MOCK_URL}}/static/images/therapist-2.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 3,
+                "name": "Hot Stone Massage"
+            },
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "first_name": "Siti",
+        "last_name": "Rahayu",
+        "location": {
+            "x": -7.2,
+            "y": 110.4
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-3.jpg",
+        "age": 29,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 2,
+                "name": "Swedish Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "first_name": "Raden",
+        "last_name": "Widodo",
+        "location": {
+            "x": -7.1,
+            "y": 110.5
+        },
+        "experience_years": 8,
+        "photo": "{{MOCK_URL}}/static/images/therapist-4.jpg",
+        "age": 32,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.00",
+        "services": [
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "first_name": "Rini",
+        "last_name": "Susanti",
+        "location": {
+            "x": -6.98,
+            "y": 110.4
+        },
+        "experience_years": 4,
+        "photo": "{{MOCK_URL}}/static/images/therapist-5.jpg",
+        "age": 27,
+        "gender": "female",
+        "is_available": false,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 8,
+                "name": "Shiatsu Massage"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "first_name": "Danu",
+        "last_name": "Santoso",
+        "location": {
+            "x": -6.9,
+            "y": 110.35
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-6.jpg",
+        "age": 28,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "first_name": "Ratna",
+        "last_name": "Wijaya",
+        "location": {
+            "x": -7.025,
+            "y": 110.4
+        },
+        "experience_years": 9,
+        "photo": "{{MOCK_URL}}/static/images/therapist-7.jpg",
+        "age": 31,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 3,
+                "name": "Hot Stone Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "first_name": "Hendri",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.02,
+            "y": 110.4
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-8.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": false,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 2,
+                "name": "Swedish Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "first_name": "Hendri",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.02,
+            "y": 110.4
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-8.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": false,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 5,
+                "name": "Reflexology"
+            },
+            {
+                "id": 8,
+                "name": "Shiatsu Massage"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "first_name": "Andi",
+        "last_name": "Widodo",
+        "location": {
+            "x": -7.008,
+            "y": 110.4019
+        },
+        "experience_years": 4,
+        "photo": "{{MOCK_URL}}/static/images/therapist-10.jpg",
+        "age": 27,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "first_name": "Lina",
+        "last_name": "Susanti",
+        "location": {
+            "x": -7.0021,
+            "y": 110.4067
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-11.jpg",
+        "age": 29,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.00",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "first_name": "Herman",
+        "last_name": "Setiawan",
+        "location": {
+            "x": -6.9998,
+            "y": 110.3995
+        },
+        "experience_years": 8,
+        "photo": "{{MOCK_URL}}/static/images/therapist-12.jpg",
+        "age": 31,
+        "gender": "male",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 2,
+                "name": "Swedish Massage"
+            },
+            {
+                "id": 8,
+                "name": "Shiatsu Massage"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "first_name": "Ratna",
+        "last_name": "Widodo",
+        "location": {
+            "x": -7.0221,
+            "y": 110.4098
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-13.jpg",
+        "age": 28,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "first_name": "Hendri",
+        "last_name": "Sulistianto",
+        "location": {
+            "x": -6.9965,
+            "y": 110.3992
+        },
+        "experience_years": 9,
+        "photo": "{{MOCK_URL}}/static/images/therapist-14.jpg",
+        "age": 31,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "first_name": "Rina",
+        "last_name": "Wijaya",
+        "location": {
+            "x": -6.9873,
+            "y": 110.4117
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-15.jpg",
+        "age": 29,
+        "gender": "female",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 3,
+                "name": "Hot Stone Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "first_name": "Surya",
+        "last_name": "Susanto",
+        "location": {
+            "x": -7.0148,
+            "y": 110.4079
+        },
+        "experience_years": 8,
+        "photo": "{{MOCK_URL}}/static/images/therapist-16.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 2,
+                "name": "Swedish Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "first_name": "Ratih",
+        "last_name": "Setiawan",
+        "location": {
+            "x": -7.0196,
+            "y": 110.4034
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-17.jpg",
+        "age": 28,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "first_name": "Hadi",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.0255,
+            "y": 110.4067
+        },
+        "experience_years": 7,
+        "photo": "{{MOCK_URL}}/static/images/therapist-18.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.00",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "first_name": "Sari",
+        "last_name": "Widodo",
+        "location": {
+            "x": -6.9959,
+            "y": 110.4121
+        },
+        "experience_years": 4,
+        "photo": "{{MOCK_URL}}/static/images/therapist-19.jpg",
+        "age": 27,
+        "gender": "female",
+        "is_available": true,
+        "rating": "3.50",
+        "services": [
+            {
+                "id": 2,
+                "name": "Swedish Massage"
+            },
+            {
+                "id": 8,
+                "name": "Shiatsu Massage"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "first_name": "Hendri",
+        "last_name": "Susanto",
+        "location": {
+            "x": -7.0072,
+            "y": 110.3983
+        },
+        "experience_years": 3,
+        "photo": "{{MOCK_URL}}/static/images/therapist-20.jpg",
+        "age": 26,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 5,
+                "name": "Reflexology"
+            },
+            {
+                "id": 8,
+                "name": "Shiatsu Massage"
+            }
+        ]
+    }
+]

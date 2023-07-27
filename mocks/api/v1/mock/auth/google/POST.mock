@@ -1,0 +1,17 @@
+HTTP/2 200 OK
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization
+
+{
+    "id": 12345,
+    "first_name": "Bintang",
+    "last_name": "Kejora",
+    "email": "user@nusatech.id",
+    "google_id": "abcd1234efgh5678",
+    "avatar": "https://www.nicepng.com/png/full/186-1866063_dicks-out-for-harambe-sample-avatar.png",
+    "role": null,
+    "created_at": "2023-07-18T07:30:00Z",
+    "updated_at": "2023-07-18T07:30:00Z"
+}

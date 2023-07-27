@@ -1,0 +1,33 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 7,
+        "first_name": "Ratna",
+        "last_name": "Wijaya",
+        "location": {
+            "x": -7.025,
+            "y": 110.4
+        },
+        "experience_years": 9,
+        "photo": "{{MOCK_URL}}/static/images/therapist-7.jpg",
+        "age": 31,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 3,
+                "name": "Hot Stone Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    }
+]

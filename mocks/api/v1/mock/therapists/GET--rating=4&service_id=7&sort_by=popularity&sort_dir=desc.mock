@@ -1,0 +1,83 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 4,
+        "first_name": "Raden",
+        "last_name": "Widodo",
+        "location": {
+            "x": -7.1,
+            "y": 110.5
+        },
+        "experience_years": 8,
+        "photo": "{{MOCK_URL}}/static/images/therapist-4.jpg",
+        "age": 32,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.00",
+        "services": [
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "first_name": "Lina",
+        "last_name": "Susanti",
+        "location": {
+            "x": -7.0021,
+            "y": 110.4067
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-11.jpg",
+        "age": 29,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.00",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "first_name": "Hadi",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.0255,
+            "y": 110.4067
+        },
+        "experience_years": 7,
+        "photo": "{{MOCK_URL}}/static/images/therapist-18.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.00",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    }
+]

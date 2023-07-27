@@ -1,0 +1,88 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 9,
+    "first_name": "Hendri",
+    "last_name": "Santoso",
+    "email": "therapist_9@nusatech.id",
+    "google_id": "GOOGLE_ID_OF_THERAPIST_9",
+    "avatar": "{{MOCK_URL}}/static/images/therapist-8.jpg",
+    "balance": 352500,
+    "role": "THERAPIST",
+    "created_at": "2023-07-18T07:30:00Z",
+    "updated_at": "2023-05-15T07:30:00Z",
+    "therapist": {
+        "id": 9,
+        "user_id": 9,
+        "first_name": "Hendri",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.02,
+            "y": 110.4
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-8.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": false,
+        "rating": "3.50",
+        "client_total": 1,
+        "review_total": 2,
+        "start_day": 1,
+        "end_day": 5,
+        "start_time": "09:00",
+        "end_time": "18:00",
+        "created_at": "2023-07-18T07:30:00Z",
+        "updated_at": "2023-05-15T07:30:00Z",
+        "services": [
+            {
+                "id": 5,
+                "name": "Reflexology",
+                "description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+                "duration": 90,
+                "minimum_duration": 1,
+                "price_per_hour": 100000,
+                "image": "{{MOCK_URL}}/static/images/service-5.jpg",
+                "icon": "{{MOCK_URL}}/static/images/service-icon-05.png"
+            },
+            {
+                "id": 8,
+                "name": "Shiatsu Massage",
+                "description": "Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.",
+                "duration": 90,
+                "minimum_duration": 1,
+                "price_per_hour": 135000,
+                "image": "{{MOCK_URL}}/static/images/service-8.jpg",
+                "icon": "{{MOCK_URL}}/static/images/service-icon-08.png"
+            }
+        ],
+        "ratings": [
+            {
+                "id": 18,
+                "order_id": 18,
+                "rating": 4,
+                "note": "Pijatnya mantep, terapisnya asyik dan jitu, ruangannya juga nice dan calm. Saya senang banget dengan pijatnya yang bikin otot dan sendi saya lebih lentur. Suka banget deh.",
+                "created_at": "2023-06-20T10:00:00+07:00",
+                "updated_at": "2023-06-20T10:00:00+07:00",
+                "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+                "user_first_name": "Bintang",
+                "user_last_name": "Kejora"
+            },
+            {
+                "id": 17,
+                "order_id": 17,
+                "rating": 3,
+                "note": "Pijatnya maknyus, terapisnya gaul dan pinter, ruangannya juga bagus dan santai. Mantap jiwa dah.",
+                "created_at": "2023-06-19T10:00:00+07:00",
+                "updated_at": "2023-06-19T10:00:00+07:00",
+                "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+                "user_first_name": "Bintang",
+                "user_last_name": "Kejora"
+            }
+        ]
+    }
+}

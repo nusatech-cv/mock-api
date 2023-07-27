@@ -1,0 +1,83 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 10,
+        "first_name": "Andi",
+        "last_name": "Widodo",
+        "location": {
+            "x": -7.008,
+            "y": 110.4019
+        },
+        "experience_years": 4,
+        "photo": "{{MOCK_URL}}/static/images/therapist-10.jpg",
+        "age": 27,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "first_name": "Hendri",
+        "last_name": "Sulistianto",
+        "location": {
+            "x": -6.9965,
+            "y": 110.3992
+        },
+        "experience_years": 9,
+        "photo": "{{MOCK_URL}}/static/images/therapist-14.jpg",
+        "age": 31,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 6,
+                "name": "Facial Treatments"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "first_name": "Hadi",
+        "last_name": "Santoso",
+        "location": {
+            "x": -7.0255,
+            "y": 110.4067
+        },
+        "experience_years": 7,
+        "photo": "{{MOCK_URL}}/static/images/therapist-18.jpg",
+        "age": 30,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.00",
+        "services": [
+            {
+                "id": 1,
+                "name": "Deep Tissue Massage"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps"
+            }
+        ]
+    }
+]

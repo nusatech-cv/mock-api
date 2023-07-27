@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+  mock_server:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      MOCK_URL: http://localhost:8080
+      HTTP_HOST: mock_server
+      HTTP_PORT: 8080
+      HTTP_X_AUTH_TOKEN:
+      MOCK_HEADERS:
+    networks:
+      homespa_network:
+
+networks:
+  homespa_network:

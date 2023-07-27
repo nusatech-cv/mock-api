@@ -1,0 +1,32 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 14,
+    "uid": "LIMJW800",
+    "user_id": 100,
+    "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+    "therapist_id": 7,
+    "service_id": 6,
+    "service_name": "Facial Treatments",
+    "service_description": "Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya",
+    "order_status": "DONE",
+    "appointment_date": "2023-06-14T10:00:00+07:00",
+    "appointment_duration": 90,
+    "total_price": 180000,
+    "note": "",
+    "location": {
+        "x": -7.06,
+        "y": 110.62
+    },
+    "created_at": "2023-06-08T10:00:00+07:00",
+    "updated_at": "2023-06-08T10:00:00+07:00",
+    "payment_method": "OVO",
+    "payment_status": "SUCCESS",
+    "sender_account": "-",
+    "rating": 5,
+    "rating_note": "Pijatnya kece abis, terapisnya friendly dan expert, ruangannya juga comfy dan relaxing. Recomended banget dah."
+}

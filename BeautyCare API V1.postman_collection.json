@@ -1,0 +1,2154 @@
+{
+	"info": {
+		"_postman_id": "e18e6733-1f4b-43f6-9ccc-89621127c230",
+		"name": "BeautyCare API V1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "68069"
+	},
+	"item": [
+		{
+			"name": "Private",
+			"item": [
+				{
+					"name": "/api/v1/mock/users/me",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/users/me?id=100",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"users",
+								"me"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Customer 100",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/users/me?id=100",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"users",
+										"me"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 06:57:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 100,\n    \"first_name\": \"Bintang\",\n    \"last_name\": \"Kejora\",\n    \"email\": \"user0@nusatech.id\",\n    \"google_id\": \"abcd1234efgh5678a\",\n    \"avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n    \"balance\": 0,\n    \"role\": \"USER\",\n    \"created_at\": \"2023-07-18T07:30:00Z\",\n    \"updated_at\": \"2023-07-18T07:30:00Z\"\n}"
+						},
+						{
+							"name": "Therapist 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/users/me?id=1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"users",
+										"me"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 06:58:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"first_name\": \"Dewi\",\n    \"last_name\": \"Sulistiani\",\n    \"email\": \"therapist_1@nusatech.id\",\n    \"google_id\": \"GOOGLE_ID_OF_THERAPIST_1\",\n    \"avatar\": \"http://localhost:8080/static/images/therapist-1.jpg\",\n    \"balance\": 1350000,\n    \"role\": \"THERAPIST\",\n    \"created_at\": \"2023-07-18T07:30:00Z\",\n    \"updated_at\": \"2023-05-15T07:30:00Z\",\n    \"user_id\": 1,\n    \"location\": {\n        \"x\": -7.01,\n        \"y\": 110.5\n    },\n    \"experience_years\": 5,\n    \"photo\": \"http://localhost:8080/static/images/therapist-1.jpg\",\n    \"age\": 28,\n    \"gender\": \"female\",\n    \"is_available\": true,\n    \"rating\": \"3.50\",\n    \"client_total\": 4,\n    \"review_total\": 2,\n    \"start_day\": 1,\n    \"end_day\": 5,\n    \"start_time\": \"09:00\",\n    \"end_time\": \"18:00\",\n    \"services\": [\n        {\n            \"id\": 1,\n            \"name\": \"Deep Tissue Massage\",\n            \"description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n            \"duration\": 90,\n            \"minimum_duration\": 1,\n            \"price_per_hour\": 500000,\n            \"image\": \"http://localhost:8080/static/images/service-1.jpeg\",\n            \"icon\": \"http://localhost:8080/static/images/service-icon-01.png\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Swedish Massage\",\n            \"description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n            \"duration\": 60,\n            \"minimum_duration\": 1,\n            \"price_per_hour\": 400000,\n            \"image\": \"http://localhost:8080/static/images/service-2.png\",\n            \"icon\": \"http://localhost:8080/static/images/service-icon-02.png\"\n        }\n    ],\n    \"ratings\": [\n        {\n            \"id\": 2,\n            \"order_id\": 2,\n            \"rating\": 4,\n            \"note\": \"Pelayanan cukup acceptable, namun perlu ada peningkatan.\",\n            \"created_at\": \"2023-06-04T10:00:00+07:00\",\n            \"updated_at\": \"2023-06-04T10:00:00+07:00\",\n            \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n            \"user_first_name\": \"Bintang\",\n            \"user_last_name\": \"Kejora\"\n        },\n        {\n            \"id\": 1,\n            \"order_id\": 1,\n            \"rating\": 3,\n            \"note\": \"Jasa pijat ini luar biasa! Saya memesan paket pijat refleksi selama satu jam dan saya tidak menyesal sama sekali. Terapisnya ahli dalam memijat kaki, tangan, dan kepala saya dengan tekanan yang pas. Saya bisa merasakan aliran darah dan energi saya meningkat. Ruangannya juga nyaman dengan musik dan aroma yang menenangkan. Saya pasti akan kembali lagi.\",\n            \"created_at\": \"2023-06-03T10:00:00+07:00\",\n            \"updated_at\": \"2023-06-03T10:00:00+07:00\",\n            \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n            \"user_first_name\": \"Bintang\",\n            \"user_last_name\": \"Kejora\"\n        }\n    ],\n    \"therapist_id\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/users/me",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"role\": \"USER\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/users/me",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Be Customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"role\": \"USER\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/users/me",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"users",
+										"me"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 06:28:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Success to be customer\"\n}"
+						},
+						{
+							"name": "Be Therapist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"role\": \"THERAPIST\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/users/me",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"users",
+										"me"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 06:27:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Success to be therapist\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/therapists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/therapists?service_id=1&rating=4&sort_by=popularity&sort_dir=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"therapists"
+							],
+							"query": [
+								{
+									"key": "service_id",
+									"value": "1"
+								},
+								{
+									"key": "rating",
+									"value": "4",
+									"description": "Integer: 1-5"
+								},
+								{
+									"key": "sort_by",
+									"value": "popularity",
+									"description": "values: popularity,price"
+								},
+								{
+									"key": "sort_dir",
+									"value": "desc",
+									"description": "values: asc,desc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Therapist List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/therapists?sort_by=popularity&sort_dir=desc",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"therapists"
+									],
+									"query": [
+										{
+											"key": "sort_by",
+											"value": "popularity",
+											"description": "values: popularity,price"
+										},
+										{
+											"key": "sort_dir",
+											"value": "desc",
+											"description": "values: asc,desc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Jul 2023 06:42:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n      \"id\": 1,\n      \"first_name\": \"Dewi\",\n      \"last_name\": \"Sulistiani\",\n      \"location\": \"POINT(110.4148 -6.9932)\",\n      \"experience_years\": 5,\n      \"photo\": \"http://localhost:8080/static/images/therapist-1.jpg\"\n      \"age\": 28,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.2,\n      \"services\": [\n        {\n          \"id\": 1,\n          \"name\": \"Deep Tissue Massage\"\n        },\n        {\n          \"id\": 2,\n          \"name\": \"Swedish Massage\"\n        }\n      ]\n    },\n    {\n      \"id\": 2,\n      \"first_name\": \"Budi\",\n      \"last_name\": \"Santoso\",\n      \"location\": \"POINT(110.3931 -7.0256)\",\n      \"experience_years\": 7,\n      \"photo\": \"http://localhost:8080/static/images/therapist-2.jpg\"\n      \"age\": 30,\n      \"gender\": \"male\",\n      \"is_available\": true,\n      \"rating\" 4.5,\n      \"services\": [\n        {\n          \"id\": 3,\n          \"name\": \"Hot Stone Massage\"\n        },\n        {\n          \"id\": 4,\n          \"name\": \"Aromatherapy Massage\"\n        }\n      ]\n    },\n    {\n      \"id\": 3,\n      \"first_name\": \"Siti\",\n      \"last_name\": \"Rahayu\",\n      \"location\": \"POINT(110.3940 -6.9953)\",\n      \"experience_years\": 6,\n      \"photo\": \"http://localhost:8080/static/images/therapist-3.jpg\"\n      \"age\": 29,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.1,\n      \"services\": [\n        {\n          \"id\": 2,\n          \"name\": \"Swedish Massage\"\n        },\n        {\n          \"id\": 5,\n          \"name\": \"Reflexology\"\n        }\n      ]\n    },\n    {\n      \"id\": 4,\n      \"first_name\": \"Raden\",\n      \"last_name\": \"Widodo\",\n      \"location\": \"POINT(110.4032 -7.0162)\",\n      \"experience_years\": 8,\n      \"photo\": \"http://localhost:8080/static/images/therapist-4.jpg\"\n      \"age\": 32,\n      \"gender\": \"male\",\n      \"is_available\": true,\n      \"rating\" 4.4,\n      \"services\": [\n        {\n          \"id\": 6,\n          \"name\": \"Facial Treatments\"\n        },\n        {\n          \"id\": 7,\n          \"name\": \"Body Scrubs and Wraps\"\n        }\n      ]\n    },\n    {\n      \"id\": 5,\n      \"first_name\": \"Rini\",\n      \"last_name\": \"Susanti\",\n      \"location\": \"POINT(110.4086 -6.9883)\",\n      \"experience_years\": 4,\n      \"photo\": \"http://localhost:8080/static/images/therapist-5.jpg\"\n      \"age\": 27,\n      \"gender\": \"female\",\n      \"is_available\": false,\n      \"rating\" 4.2,\n      \"services\": [\n        {\n          \"id\": 1,\n          \"name\": \"Deep Tissue Massage\"\n        },\n        {\n          \"id\": 8,\n          \"name\": \"Acupuncture\"\n        }\n      ]\n    },\n    {\n      \"id\": 6,\n      \"first_name\": \"Danu\",\n      \"last_name\": \"Santoso\",\n      \"location\": \"POINT(110.3963 -6.9944)\",\n      \"experience_years\": 5,\n      \"photo\": \"http://localhost:8080/static/images/therapist-6.jpg\"\n      \"age\": 28,\n      \"gender\": \"male\",\n      \"is_available\": true,\n      \"rating\" 4.0,\n      \"services\": [\n        {\n          \"id\": 4,\n          \"name\": \"Aromatherapy Massage\"\n        },\n        {\n          \"id\": 5,\n          \"name\": \"Reflexology\"\n        }\n      ]\n    },\n    {\n      \"id\": 7,\n      \"first_name\": \"Ratna\",\n      \"last_name\": \"Wijaya\",\n      \"location\": \"POINT(110.4012 -7.0116)\",\n      \"experience_years\": 9,\n      \"photo\": \"http://localhost:8080/static/images/therapist-7.jpg\"\n      \"age\": 31,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.4,\n      \"services\": [\n        {\n          \"id\": 3,\n          \"name\": \"Hot Stone Massage\"\n        },\n        {\n          \"id\": 6,\n          \"name\": \"Facial Treatments\"\n        }\n      ]\n    },\n    {\n      \"id\": 8,\n      \"first_name\": \"Hendri\",\n      \"last_name\": \"Santoso\",\n      \"location\": \"POINT(110.4058 -7.0213)\",\n      \"experience_years\": 6,\n      \"photo\": \"http://localhost:8080/static/images/therapist-8.jpg\"\n      \"age\": 30,\n      \"gender\": \"male\",\n      \"is_available\": false,\n      \"rating\" 4.7,\n      \"services\": [\n        {\n          \"id\": 2,\n          \"name\": \"Swedish Massage\"\n        },\n        {\n          \"id\": 7,\n          \"name\": \"Body Scrubs and Wraps\"\n        }\n      ]\n    },\n    {\n      \"id\": 9,\n      \"first_name\": \"Anita\",\n      \"last_name\": \"Rahayu\",\n      \"location\": \"POINT(110.4140 -6.9945)\",\n      \"experience_years\": 3,\n      \"photo\": \"http://localhost:8080/static/images/therapist-9.jpg\"\n      \"age\": 26,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.8,\n      \"services\": [\n        {\n          \"id\": 5,\n          \"name\": \"Reflexology\"\n        },\n        {\n          \"id\": 8,\n          \"name\": \"Acupuncture\"\n        }\n      ]\n    },\n    {\n      \"id\": 10,\n      \"first_name\": \"Andi\",\n      \"last_name\": \"Widodo\",\n      \"location\": \"POINT(110.4019 -7.0080)\",\n      \"experience_years\": 4,\n      \"photo\": \"http://localhost:8080/static/images/therapist-10.jpg\"\n      \"age\": 27,\n      \"gender\": \"male\",\n      \"is_available\": true,\n      \"rating\" 4.8,\n      \"services\": [\n        {\n          \"id\": 1,\n          \"name\": \"Deep Tissue Massage\"\n        },\n        {\n          \"id\": 6,\n          \"name\": \"Facial Treatments\"\n        }\n      ]\n    },\n    {\n      \"id\": 11,\n      \"first_name\": \"Lina\",\n      \"last_name\": \"Susanti\",\n      \"location\": \"POINT(110.4067 -7.0021)\",\n      \"experience_years\": 6,\n      \"photo\": \"http://localhost:8080/static/images/therapist-11.jpg\"\n      \"age\": 29,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.1,\n      \"services\": [\n        {\n          \"id\": 3,\n          \"name\": \"Hot Stone Massage\"\n        },\n        {\n          \"id\": 7,\n          \"name\": \"Body Scrubs and Wraps\"\n        }\n      ]\n    },\n    {\n      \"id\": 12,\n      \"first_name\": \"Herman\",\n      \"last_name\": \"Setiawan\",\n      \"location\": \"POINT(110.3995 -6.9998)\",\n      \"experience_years\": 8,\n      \"photo\": \"http://localhost:8080/static/images/therapist-12.jpg\"\n      \"age\": 31,\n      \"gender\": \"male\",\n      \"is_available\": true,\n      \"rating\" 4.2,\n      \"services\": [\n        {\n          \"id\": 2,\n          \"name\": \"Swedish Massage\"\n        },\n        {\n          \"id\": 8,\n          \"name\": \"Acupuncture\"\n        }\n      ]\n    },\n    {\n      \"id\": 13,\n      \"first_name\": \"Ratna\",\n      \"last_name\": \"Widodo\",\n      \"location\": \"POINT(110.4098 -7.0221)\",\n      \"experience_years\": 5,\n      \"photo\": \"http://localhost:8080/static/images/therapist-13.jpg\"\n      \"age\": 28,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.3,\n      \"services\": [\n        {\n          \"id\": 4,\n          \"name\": \"Aromatherapy Massage\"\n        },\n        {\n          \"id\": 5,\n          \"name\": \"Reflexology\"\n        }\n      ]\n    },\n    {\n      \"id\": 14,\n      \"first_name\": \"Hendri\",\n      \"last_name\": \"Sulistianto\",\n      \"location\": \"POINT(110.3992 -6.9965)\",\n      \"experience_years\": 9,\n      \"photo\": \"http://localhost:8080/static/images/therapist-14.jpg\"\n      \"age\": 31,\n      \"gender\": \"male\",\n      \"is_available\": false,\n      \"rating\" 4.7,\n      \"services\": [\n        {\n          \"id\": 1,\n          \"name\": \"Deep Tissue Massage\"\n        },\n        {\n          \"id\": 6,\n          \"name\": \"Facial Treatments\"\n        }\n      ]\n    },\n    {\n      \"id\": 15,\n      \"first_name\": \"Rina\",\n      \"last_name\": \"Wijaya\",\n      \"location\": \"POINT(110.4117 -6.9873)\",\n      \"experience_years\": 6,\n      \"photo\": \"http://localhost:8080/static/images/therapist-15.jpg\"\n      \"age\": 29,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.5,\n      \"services\": [\n        {\n          \"id\": 3,\n          \"name\": \"Hot Stone Massage\"\n        },\n        {\n          \"id\": 7,\n          \"name\": \"Body Scrubs and Wraps\"\n        }\n      ]\n    },\n    {\n      \"id\": 16,\n      \"first_name\": \"Surya\",\n      \"last_name\": \"Susanto\",\n      \"location\": \"POINT(110.4079 -7.0148)\",\n      \"experience_years\": 8,\n      \"photo\": \"http://localhost:8080/static/images/therapist-16.jpg\"\n      \"age\": 30,\n      \"gender\": \"male\",\n      \"is_available\": true,\n      \"rating\" 4.6,\n      \"services\": [\n        {\n          \"id\": 2,\n          \"name\": \"Swedish Massage\"\n        },\n        {\n          \"id\": 5,\n          \"name\": \"Reflexology\"\n        }\n      ]\n    },\n    {\n      \"id\": 17,\n      \"first_name\": \"Ratih\",\n      \"last_name\": \"Setiawan\",\n      \"location\": \"POINT(110.4034 -7.0196)\",\n      \"experience_years\": 5,\n      \"photo\": \"http://localhost:8080/static/images/therapist-17.jpg\"\n      \"age\": 28,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.5,\n      \"services\": [\n        {\n          \"id\": 4,\n          \"name\": \"Aromatherapy Massage\"\n        },\n        {\n          \"id\": 6,\n          \"name\": \"Facial Treatments\"\n        }\n      ]\n    },\n    {\n      \"id\": 18,\n      \"first_name\": \"Hadi\",\n      \"last_name\": \"Santoso\",\n      \"location\": \"POINT(110.4067 -7.0255)\",\n      \"experience_years\": 7,\n      \"photo\": \"http://localhost:8080/static/images/therapist-18.jpg\"\n      \"age\": 30,\n      \"gender\": \"male\",\n      \"is_available\": false,\n      \"rating\" 4.1,\n      \"services\": [\n        {\n          \"id\": 1,\n          \"name\": \"Deep Tissue Massage\"\n        },\n        {\n          \"id\": 7,\n          \"name\": \"Body Scrubs and Wraps\"\n        }\n      ]\n    },\n    {\n      \"id\": 19,\n      \"first_name\": \"Sari\",\n      \"last_name\": \"Widodo\",\n      \"location\": \"POINT(110.4121 -6.9959)\",\n      \"experience_years\": 4,\n      \"photo\": \"http://localhost:8080/static/images/therapist-19.jpg\"\n      \"age\": 27,\n      \"gender\": \"female\",\n      \"is_available\": true,\n      \"rating\" 4.5,\n      \"services\": [\n        {\n          \"id\": 2,\n          \"name\": \"Swedish Massage\"\n        },\n        {\n          \"id\": 8,\n          \"name\": \"Acupuncture\"\n        }\n      ]\n    },\n    {\n      \"id\": 20,\n      \"first_name\": \"Hendri\",\n      \"last_name\": \"Susanto\",\n      \"location\": \"POINT(110.3983 -7.0072)\",\n      \"experience_years\": 3,\n      \"photo\": \"http://localhost:8080/static/images/therapist-20.jpg\"\n      \"age\": 26,\n      \"gender\": \"male\",\n      \"is_available\": true,\n      \"rating\" 4.9,\n      \"services\": [\n        {\n          \"id\": 5,\n          \"name\": \"Reflexology\"\n        },\n        {\n          \"id\": 8,\n          \"name\": \"Acupuncture\"\n        }\n      ]\n    }\n]"
+						},
+						{
+							"name": "Therapist List Service ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/therapists?service_id=1&rating=4&sort_by=popularity&sort_dir=desc",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"therapists"
+									],
+									"query": [
+										{
+											"key": "service_id",
+											"value": "1"
+										},
+										{
+											"key": "rating",
+											"value": "4",
+											"description": "Integer: 1-5"
+										},
+										{
+											"key": "sort_by",
+											"value": "popularity",
+											"description": "values: popularity,price"
+										},
+										{
+											"key": "sort_dir",
+											"value": "desc",
+											"description": "values: asc,desc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jul 2023 01:47:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 10,\n        \"first_name\": \"Andi\",\n        \"last_name\": \"Widodo\",\n        \"location\": {\n            \"x\": -7.008,\n            \"y\": 110.4019\n        },\n        \"experience_years\": 4,\n        \"photo\": \"http://localhost:8080/static/images/therapist-10.jpg\",\n        \"age\": 27,\n        \"gender\": \"male\",\n        \"is_available\": true,\n        \"rating\": \"4.50\",\n        \"services\": [\n            {\n                \"id\": 1,\n                \"name\": \"Deep Tissue Massage\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Facial Treatments\"\n            }\n        ]\n    },\n    {\n        \"id\": 14,\n        \"first_name\": \"Hendri\",\n        \"last_name\": \"Sulistianto\",\n        \"location\": {\n            \"x\": -6.9965,\n            \"y\": 110.3992\n        },\n        \"experience_years\": 9,\n        \"photo\": \"http://localhost:8080/static/images/therapist-14.jpg\",\n        \"age\": 31,\n        \"gender\": \"male\",\n        \"is_available\": true,\n        \"rating\": \"4.50\",\n        \"services\": [\n            {\n                \"id\": 1,\n                \"name\": \"Deep Tissue Massage\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Facial Treatments\"\n            }\n        ]\n    },\n    {\n        \"id\": 18,\n        \"first_name\": \"Hadi\",\n        \"last_name\": \"Santoso\",\n        \"location\": {\n            \"x\": -7.0255,\n            \"y\": 110.4067\n        },\n        \"experience_years\": 7,\n        \"photo\": \"http://localhost:8080/static/images/therapist-18.jpg\",\n        \"age\": 30,\n        \"gender\": \"male\",\n        \"is_available\": true,\n        \"rating\": \"4.00\",\n        \"services\": [\n            {\n                \"id\": 1,\n                \"name\": \"Deep Tissue Massage\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Body Scrubs and Wraps\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/therapists/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/therapists/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"therapists",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Therapist Item 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/therapists/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"therapists",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Jul 2023 06:55:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"first_name\": \"Dewi\",\n    \"last_name\": \"Sulistiani\",\n    \"location\": \"POINT(110.4148 -6.9932)\",\n    \"experience_years\": 5,\n    \"photo\": \"http://localhost:8080/static/images/therapist-1.jpg\",\n    \"age\": 28,\n    \"gender\": \"female\",\n    \"is_available\": true,\n    \"rating_average\": 4.5,\n    \"services\": [\n        {\n            \"id\": 1,\n            \"name\": \"Deep Tissue Massage\",\n            \"description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n            \"duration\": 90,\n            \"price_per_hour\": 500000,\n            \"minimum_duration\": 1,\n            \"image\": \"http://localhost:8080/static/images/service-1.jpeg\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Swedish Massage\",\n            \"description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n            \"duration\": 60,\n            \"price_per_hour\": 400000,\n            \"minimum_duration\": 1,\n            \"image\": \"http://localhost:8080/static/images/service-2.png\"\n        }\n    ],\n    \"ratings\": [\n        {\n            \"id\": 1,\n            \"user_id\": 123,\n            \"order_id\": 456,\n            \"rating\": 5,\n            \"note\": \"Terapis yang sangat profesional dan berpengalaman. Pelayanannya luar biasa!\",\n            \"created_at\": \"2023-07-18T15:30:00Z\",\n            \"updated_at\": \"2023-07-18T15:30:00Z\"\n        },\n        {\n            \"id\": 2,\n            \"user_id\": 789,\n            \"order_id\": 123,\n            \"rating\": 4,\n            \"note\": \"Pijatannya sangat menenangkan dan membantu meredakan ketegangan otot.\",\n            \"created_at\": \"2023-07-17T12:45:00Z\",\n            \"updated_at\": \"2023-07-17T12:45:00Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/services",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/services",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"services"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Service LIst",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/services",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"services"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Jul 2023 07:54:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Deep Tissue Massage\",\n        \"description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n        \"duration\": 90,\n        \"price_per_hour\": 500000,\n        \"minimum_duration\": 1,\n        \"image\": \"http://localhost:8080/static/images/service-1.jpeg\",\n        \"icon\": \"http://localhost:8080/static/images/service-icon-01.png\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Swedish Massage\",\n        \"description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n        \"duration\": 60,\n        \"price_per_hour\": 400000,\n        \"minimum_duration\": 1,\n        \"image\": \"http://localhost:8080/static/images/service-2.png\",\n        \"icon\": \"http://localhost:8080/static/images/service-icon-02.png\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Hot Stone Massage\",\n        \"description\": \"Hot Stone Massage adalah jenis terapi pijat yang menggunakan batu panas sebagai alat utama. Batu-batu tersebut, biasanya batu basalt yang telah dipanaskan, ditempatkan pada titik-titik tertentu di seluruh tubuh untuk membantu meredakan ketegangan otot dan meningkatkan aliran darah. Teknik ini menghasilkan sensasi hangat yang mendalam dan relaksasi yang nyaman, sehingga sangat efektif untuk membantu meredakan stres dan meningkatkan kesejahteraan secara keseluruhan.\",\n        \"duration\": 90,\n        \"price_per_hour\": 700000,\n        \"minimum_duration\": 1,\n        \"image\": \"http://localhost:8080/static/images/service-3.avif\",\n        \"icon\": \"http://localhost:8080/static/images/service-icon-03.png\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Aromatherapy Massage\",\n        \"description\": \"Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.\",\n        \"duration\": 90,\n        \"price_per_hour\": 850000,\n        \"minimum_duration\": 1,\n        \"image\": \"http://localhost:8080/static/images/service-4.jpg\",\n        \"icon\": \"http://localhost:8080/static/images/service-icon-04.png\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Reflexology\",\n        \"description\": \"Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.\",\n        \"duration\": 90,\n        \"price_per_hour\": 100000,\n        \"minimum_duration\": 1,\n        \"image\": \"http://localhost:8080/static/images/service-5.jpg\",\n        \"icon\": \"http://localhost:8080/static/images/service-icon-05.png\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Facial Treatments\",\n        \"description\": \"Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya\",\n        \"duration\": 90,\n        \"price_per_hour\": 120000,\n        \"minimum_duration\": 1,\n        \"image\": \"http://localhost:8080/static/images/service-6.jpg\",\n        \"icon\": \"http://localhost:8080/static/images/service-icon-06.png\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Body Scrubs and Wraps\",\n        \"description\": \"Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.\",\n        \"duration\": 90,\n        \"price_per_hour\": 100000,\n        \"minimum_duration\": 1,\n        \"image\": \"http://localhost:8080/static/images/service-7.jpg\",\n        \"icon\": \"http://localhost:8080/static/images/service-icon-07.png\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Shiatsu Massage\",\n        \"description\": \"Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.\",\n        \"duration\": 90,\n        \"price_per_hour\": 135000,\n        \"minimum_duration\": 1,\n        \"image\": \"http://localhost:8080/static/images/service-8.jpg\",\n        \"icon\": \"http://localhost:8080/static/images/service-icon-08.png\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/orders?therapist_id=1&sort_by=created_at&sort_dir=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "100",
+									"description": "DEV ONLY && ROLE === USER",
+									"disabled": true
+								},
+								{
+									"key": "therapist_id",
+									"value": "1",
+									"description": "DEV ONLY && ROLE === THERAPIST"
+								},
+								{
+									"key": "status",
+									"value": "DONE",
+									"description": "ROLE === USER; values: 'WAITING_CONFIRMATION', 'WAITING_PAYMENT', 'PAID', 'DONE', 'CANCELED', 'EXPIRED'",
+									"disabled": true
+								},
+								{
+									"key": "sort_by",
+									"value": "created_at"
+								},
+								{
+									"key": "sort_dir",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Customer Orde List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/orders?user_id=100&status=DONE&sort_by=created_at&sort_dir=desc",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"orders"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "100",
+											"description": "DEV ONLY && ROLE === USER"
+										},
+										{
+											"key": "therapist_id",
+											"value": "1",
+											"description": "DEV ONLY && ROLE === THERAPIST",
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": "DONE",
+											"description": "ROLE === USER; values: 'WAITING_CONFIRMATION', 'WAITING_PAYMENT', 'PAID', 'DONE', 'CANCELED', 'EXPIRED'"
+										},
+										{
+											"key": "sort_by",
+											"value": "created_at"
+										},
+										{
+											"key": "sort_dir",
+											"value": "desc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 05:57:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 39,\n        \"uid\": \"LJNPCDC0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 20,\n        \"service_id\": 5,\n        \"service_name\": \"Reflexology\",\n        \"service_description\": \"Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-09T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.475,\n            \"y\": 110.785\n        },\n        \"created_at\": \"2023-07-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-04T10:00:00+07:00\"\n    },\n    {\n        \"id\": 40,\n        \"uid\": \"LJNPCDC0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 20,\n        \"service_id\": 8,\n        \"service_name\": \"Shiatsu Massage\",\n        \"service_description\": \"Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-10T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 540000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.19,\n            \"y\": 110.88\n        },\n        \"created_at\": \"2023-07-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-04T10:00:00+07:00\"\n    },\n    {\n        \"id\": 37,\n        \"uid\": \"LJKUGO00\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 19,\n        \"service_id\": 2,\n        \"service_name\": \"Swedish Massage\",\n        \"service_description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-07T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 1600000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.45,\n            \"y\": 110.77\n        },\n        \"created_at\": \"2023-07-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-02T10:00:00+07:00\"\n    },\n    {\n        \"id\": 38,\n        \"uid\": \"LJKUGO00\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 19,\n        \"service_id\": 8,\n        \"service_name\": \"Shiatsu Massage\",\n        \"service_description\": \"Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-08T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 540000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.18,\n            \"y\": 110.86\n        },\n        \"created_at\": \"2023-07-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-02T10:00:00+07:00\"\n    },\n    {\n        \"id\": 35,\n        \"uid\": \"LJHZKYO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 18,\n        \"service_id\": 1,\n        \"service_name\": \"Deep Tissue Massage\",\n        \"service_description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-05T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 2000000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.425,\n            \"y\": 110.755\n        },\n        \"created_at\": \"2023-06-30T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-30T10:00:00+07:00\"\n    },\n    {\n        \"id\": 36,\n        \"uid\": \"LJHZKYO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 18,\n        \"service_id\": 7,\n        \"service_name\": \"Body Scrubs and Wraps\",\n        \"service_description\": \"Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-06T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.17,\n            \"y\": 110.84\n        },\n        \"created_at\": \"2023-06-30T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-30T10:00:00+07:00\"\n    },\n    {\n        \"id\": 33,\n        \"uid\": \"LJF4P9C0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 17,\n        \"service_id\": 4,\n        \"service_name\": \"Aromatherapy Massage\",\n        \"service_description\": \"Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-03T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 3400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.4,\n            \"y\": 110.74\n        },\n        \"created_at\": \"2023-06-28T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-28T10:00:00+07:00\"\n    },\n    {\n        \"id\": 34,\n        \"uid\": \"LJF4P9C0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 17,\n        \"service_id\": 6,\n        \"service_name\": \"Facial Treatments\",\n        \"service_description\": \"Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-04T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 480000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.16,\n            \"y\": 110.82\n        },\n        \"created_at\": \"2023-06-28T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-28T10:00:00+07:00\"\n    },\n    {\n        \"id\": 31,\n        \"uid\": \"LJC9TK00\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 16,\n        \"service_id\": 2,\n        \"service_name\": \"Swedish Massage\",\n        \"service_description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-01T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 1600000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.375,\n            \"y\": 110.725\n        },\n        \"created_at\": \"2023-06-26T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-26T10:00:00+07:00\"\n    },\n    {\n        \"id\": 32,\n        \"uid\": \"LJC9TK00\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 16,\n        \"service_id\": 5,\n        \"service_name\": \"Reflexology\",\n        \"service_description\": \"Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-07-02T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.15,\n            \"y\": 110.8\n        },\n        \"created_at\": \"2023-06-26T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-26T10:00:00+07:00\"\n    },\n    {\n        \"id\": 29,\n        \"uid\": \"LJ9EXUO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 15,\n        \"service_id\": 3,\n        \"service_name\": \"Hot Stone Massage\",\n        \"service_description\": \"Hot Stone Massage adalah jenis terapi pijat yang menggunakan batu panas sebagai alat utama. Batu-batu tersebut, biasanya batu basalt yang telah dipanaskan, ditempatkan pada titik-titik tertentu di seluruh tubuh untuk membantu meredakan ketegangan otot dan meningkatkan aliran darah. Teknik ini menghasilkan sensasi hangat yang mendalam dan relaksasi yang nyaman, sehingga sangat efektif untuk membantu meredakan stres dan meningkatkan kesejahteraan secara keseluruhan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-29T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 2800000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.35,\n            \"y\": 110.71\n        },\n        \"created_at\": \"2023-06-24T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-24T10:00:00+07:00\"\n    },\n    {\n        \"id\": 30,\n        \"uid\": \"LJ9EXUO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 15,\n        \"service_id\": 7,\n        \"service_name\": \"Body Scrubs and Wraps\",\n        \"service_description\": \"Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-30T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.14,\n            \"y\": 110.78\n        },\n        \"created_at\": \"2023-06-24T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-24T10:00:00+07:00\"\n    },\n    {\n        \"id\": 27,\n        \"uid\": \"LJ6K25C0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 14,\n        \"service_id\": 1,\n        \"service_name\": \"Deep Tissue Massage\",\n        \"service_description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-27T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 2000000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.325,\n            \"y\": 110.695\n        },\n        \"created_at\": \"2023-06-22T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-22T10:00:00+07:00\"\n    },\n    {\n        \"id\": 28,\n        \"uid\": \"LJ6K25C0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 14,\n        \"service_id\": 6,\n        \"service_name\": \"Facial Treatments\",\n        \"service_description\": \"Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-28T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 480000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.13,\n            \"y\": 110.76\n        },\n        \"created_at\": \"2023-06-22T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-22T10:00:00+07:00\"\n    },\n    {\n        \"id\": 25,\n        \"uid\": \"LJ3P6G00\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 13,\n        \"service_id\": 4,\n        \"service_name\": \"Aromatherapy Massage\",\n        \"service_description\": \"Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-25T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 3400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.3,\n            \"y\": 110.68\n        },\n        \"created_at\": \"2023-06-20T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-20T10:00:00+07:00\"\n    },\n    {\n        \"id\": 26,\n        \"uid\": \"LJ3P6G00\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 13,\n        \"service_id\": 5,\n        \"service_name\": \"Reflexology\",\n        \"service_description\": \"Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-26T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.12,\n            \"y\": 110.74\n        },\n        \"created_at\": \"2023-06-20T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-20T10:00:00+07:00\"\n    },\n    {\n        \"id\": 23,\n        \"uid\": \"LJ0UAQO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 12,\n        \"service_id\": 2,\n        \"service_name\": \"Swedish Massage\",\n        \"service_description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-23T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 1600000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.275,\n            \"y\": 110.665\n        },\n        \"created_at\": \"2023-06-18T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-18T10:00:00+07:00\"\n    },\n    {\n        \"id\": 24,\n        \"uid\": \"LJ0UAQO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 12,\n        \"service_id\": 8,\n        \"service_name\": \"Shiatsu Massage\",\n        \"service_description\": \"Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-24T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 540000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.11,\n            \"y\": 110.72\n        },\n        \"created_at\": \"2023-06-18T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-18T10:00:00+07:00\"\n    },\n    {\n        \"id\": 21,\n        \"uid\": \"LIXZF1C0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 11,\n        \"service_id\": 4,\n        \"service_name\": \"Aromatherapy Massage\",\n        \"service_description\": \"Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-21T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 3400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.25,\n            \"y\": 110.65\n        },\n        \"created_at\": \"2023-06-16T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-16T10:00:00+07:00\"\n    },\n    {\n        \"id\": 22,\n        \"uid\": \"LIXZF1C0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 11,\n        \"service_id\": 7,\n        \"service_name\": \"Body Scrubs and Wraps\",\n        \"service_description\": \"Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-22T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.1,\n            \"y\": 110.7\n        },\n        \"created_at\": \"2023-06-16T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-16T10:00:00+07:00\"\n    },\n    {\n        \"id\": 19,\n        \"uid\": \"LIV4JC00\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 10,\n        \"service_id\": 1,\n        \"service_name\": \"Deep Tissue Massage\",\n        \"service_description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-19T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 2000000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.225,\n            \"y\": 110.635\n        },\n        \"created_at\": \"2023-06-14T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-14T10:00:00+07:00\"\n    },\n    {\n        \"id\": 20,\n        \"uid\": \"LIV4JC00\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 10,\n        \"service_id\": 6,\n        \"service_name\": \"Facial Treatments\",\n        \"service_description\": \"Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-20T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 480000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.09,\n            \"y\": 110.68\n        },\n        \"created_at\": \"2023-06-14T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-14T10:00:00+07:00\"\n    },\n    {\n        \"id\": 17,\n        \"uid\": \"LIS9NMO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 9,\n        \"service_id\": 5,\n        \"service_name\": \"Reflexology\",\n        \"service_description\": \"Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-17T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.2,\n            \"y\": 110.62\n        },\n        \"created_at\": \"2023-06-12T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-12T10:00:00+07:00\"\n    },\n    {\n        \"id\": 18,\n        \"uid\": \"LIS9NMO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 9,\n        \"service_id\": 8,\n        \"service_name\": \"Shiatsu Massage\",\n        \"service_description\": \"Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-18T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 540000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.08,\n            \"y\": 110.66\n        },\n        \"created_at\": \"2023-06-12T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-12T10:00:00+07:00\"\n    },\n    {\n        \"id\": 15,\n        \"uid\": \"LIPERXC0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 8,\n        \"service_id\": 2,\n        \"service_name\": \"Swedish Massage\",\n        \"service_description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-15T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 1600000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.175,\n            \"y\": 110.605\n        },\n        \"created_at\": \"2023-06-10T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-10T10:00:00+07:00\"\n    },\n    {\n        \"id\": 16,\n        \"uid\": \"LIPERXC0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 8,\n        \"service_id\": 7,\n        \"service_name\": \"Body Scrubs and Wraps\",\n        \"service_description\": \"Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-16T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.07,\n            \"y\": 110.64\n        },\n        \"created_at\": \"2023-06-10T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-10T10:00:00+07:00\"\n    },\n    {\n        \"id\": 13,\n        \"uid\": \"LIMJW800\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 7,\n        \"service_id\": 3,\n        \"service_name\": \"Hot Stone Massage\",\n        \"service_description\": \"Hot Stone Massage adalah jenis terapi pijat yang menggunakan batu panas sebagai alat utama. Batu-batu tersebut, biasanya batu basalt yang telah dipanaskan, ditempatkan pada titik-titik tertentu di seluruh tubuh untuk membantu meredakan ketegangan otot dan meningkatkan aliran darah. Teknik ini menghasilkan sensasi hangat yang mendalam dan relaksasi yang nyaman, sehingga sangat efektif untuk membantu meredakan stres dan meningkatkan kesejahteraan secara keseluruhan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-13T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 2800000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.15,\n            \"y\": 110.59\n        },\n        \"created_at\": \"2023-06-08T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-08T10:00:00+07:00\"\n    },\n    {\n        \"id\": 14,\n        \"uid\": \"LIMJW800\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 7,\n        \"service_id\": 6,\n        \"service_name\": \"Facial Treatments\",\n        \"service_description\": \"Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-14T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 480000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.06,\n            \"y\": 110.62\n        },\n        \"created_at\": \"2023-06-08T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-08T10:00:00+07:00\"\n    },\n    {\n        \"id\": 11,\n        \"uid\": \"LIJP0IO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 6,\n        \"service_id\": 4,\n        \"service_name\": \"Aromatherapy Massage\",\n        \"service_description\": \"Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-11T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 3400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.125,\n            \"y\": 110.575\n        },\n        \"created_at\": \"2023-06-06T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-06T10:00:00+07:00\"\n    },\n    {\n        \"id\": 12,\n        \"uid\": \"LIJP0IO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 6,\n        \"service_id\": 5,\n        \"service_name\": \"Reflexology\",\n        \"service_description\": \"Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-12T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.05,\n            \"y\": 110.6\n        },\n        \"created_at\": \"2023-06-06T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-06T10:00:00+07:00\"\n    },\n    {\n        \"id\": 9,\n        \"uid\": \"LIGU4TC0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 5,\n        \"service_id\": 1,\n        \"service_name\": \"Deep Tissue Massage\",\n        \"service_description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-09T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 2000000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.1,\n            \"y\": 110.56\n        },\n        \"created_at\": \"2023-06-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-04T10:00:00+07:00\"\n    },\n    {\n        \"id\": 10,\n        \"uid\": \"LIGU4TC0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 5,\n        \"service_id\": 8,\n        \"service_name\": \"Shiatsu Massage\",\n        \"service_description\": \"Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-10T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 540000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.04,\n            \"y\": 110.58\n        },\n        \"created_at\": \"2023-06-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-04T10:00:00+07:00\"\n    },\n    {\n        \"id\": 7,\n        \"uid\": \"LIDZ9400\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 4,\n        \"service_id\": 6,\n        \"service_name\": \"Facial Treatments\",\n        \"service_description\": \"Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-07T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 480000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.075,\n            \"y\": 110.545\n        },\n        \"created_at\": \"2023-06-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-02T10:00:00+07:00\"\n    },\n    {\n        \"id\": 8,\n        \"uid\": \"LIDZ9400\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 4,\n        \"service_id\": 7,\n        \"service_name\": \"Body Scrubs and Wraps\",\n        \"service_description\": \"Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-08T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.03,\n            \"y\": 110.56\n        },\n        \"created_at\": \"2023-06-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-02T10:00:00+07:00\"\n    },\n    {\n        \"id\": 5,\n        \"uid\": \"LIB4DEO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 3,\n        \"service_id\": 2,\n        \"service_name\": \"Swedish Massage\",\n        \"service_description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-05T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 1600000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.05,\n            \"y\": 110.53\n        },\n        \"created_at\": \"2023-05-31T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-31T10:00:00+07:00\"\n    },\n    {\n        \"id\": 6,\n        \"uid\": \"LIB4DEO0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 3,\n        \"service_id\": 5,\n        \"service_name\": \"Reflexology\",\n        \"service_description\": \"Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-06T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.02,\n            \"y\": 110.54\n        },\n        \"created_at\": \"2023-05-31T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-31T10:00:00+07:00\"\n    },\n    {\n        \"id\": 3,\n        \"uid\": \"LI89HPC0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 2,\n        \"service_id\": 3,\n        \"service_name\": \"Hot Stone Massage\",\n        \"service_description\": \"Hot Stone Massage adalah jenis terapi pijat yang menggunakan batu panas sebagai alat utama. Batu-batu tersebut, biasanya batu basalt yang telah dipanaskan, ditempatkan pada titik-titik tertentu di seluruh tubuh untuk membantu meredakan ketegangan otot dan meningkatkan aliran darah. Teknik ini menghasilkan sensasi hangat yang mendalam dan relaksasi yang nyaman, sehingga sangat efektif untuk membantu meredakan stres dan meningkatkan kesejahteraan secara keseluruhan.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-03T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 2800000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.025,\n            \"y\": 110.515\n        },\n        \"created_at\": \"2023-05-29T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-29T10:00:00+07:00\"\n    },\n    {\n        \"id\": 4,\n        \"uid\": \"LI89HPC0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 2,\n        \"service_id\": 4,\n        \"service_name\": \"Aromatherapy Massage\",\n        \"service_description\": \"Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-04T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 3400000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7.01,\n            \"y\": 110.52\n        },\n        \"created_at\": \"2023-05-29T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-29T10:00:00+07:00\"\n    },\n    {\n        \"id\": 1,\n        \"uid\": \"LI5EM000\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 1,\n        \"service_id\": 1,\n        \"service_name\": \"Deep Tissue Massage\",\n        \"service_description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-01T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 2000000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7,\n            \"y\": 110.5\n        },\n        \"created_at\": \"2023-05-27T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-27T10:00:00+07:00\"\n    },\n    {\n        \"id\": 2,\n        \"uid\": \"LI5EM000\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 1,\n        \"service_id\": 2,\n        \"service_name\": \"Swedish Massage\",\n        \"service_description\": \"Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.\",\n        \"order_status\": \"DONE\",\n        \"appointment_date\": \"2023-06-02T10:00:00+07:00\",\n        \"appointment_duration\": 4,\n        \"total_price\": 1600000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7,\n            \"y\": 110.5\n        },\n        \"created_at\": \"2023-05-27T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-27T10:00:00+07:00\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/orders",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"therapist_id\":1,\"service_id\":1,\"appointment_date\":\"2023-07-30T07:00:00Z\",\"appointment_duration\":90,\"note\":\"\"}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/orders",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Order 101",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"therapist_id\":1,\"service_id\":1,\"appointment_date\":\"2023-07-30T07:00:00Z\",\"appointment_duration\":90,\"note\":\"\"}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/orders",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jul 2023 03:23:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Success to be therapist\",\n    \"data\": {\n        \"id\": 101,\n        \"uid\": \"LK2TR4W0\",\n        \"user_id\": 100,\n        \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n        \"therapist_id\": 1,\n        \"service_id\": 1,\n        \"service_name\": \"Deep Tissue Massage\",\n        \"service_description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n        \"order_status\": \"WAITING_CONFIRMATION\",\n        \"appointment_date\": \"2023-07-20T10:00:00+07:00\",\n        \"appointment_duration\": 90,\n        \"total_price\": 750000,\n        \"note\": \"\",\n        \"location\": {\n            \"x\": -7,\n            \"y\": 110.5\n        },\n        \"created_at\": \"2023-07-15T00:00:00+07:00\",\n        \"updated_at\": \"2023-07-15T00:00:00+07:00\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/orders/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/orders/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"orders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Order 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/orders/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"orders",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 05:56:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"uid\": \"LI5EM000\",\n    \"user_id\": 100,\n    \"user_avatar\": \"http://localhost:8080/static/images/user-avatar-1.png\",\n    \"therapist_id\": 1,\n    \"service_id\": 1,\n    \"service_name\": \"Deep Tissue Massage\",\n    \"service_description\": \"Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit\",\n    \"order_status\": \"DONE\",\n    \"appointment_date\": \"2023-06-01T10:00:00+07:00\",\n    \"appointment_duration\": 4,\n    \"total_price\": 2000000,\n    \"note\": \"\",\n    \"location\": {\n        \"x\": -7,\n        \"y\": 110.5\n    },\n    \"created_at\": \"2023-05-27T10:00:00+07:00\",\n    \"updated_at\": \"2023-05-27T10:00:00+07:00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/orders/:id/cancel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/orders/:id/cancel",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"orders",
+								":id",
+								"cancel"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Cancelled",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/orders/:id/cancel",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"orders",
+										":id",
+										"cancel"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "101"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 08:28:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\"message\":\"Successfully cancel order.\"}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/orders/:id/accept",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/orders/:id/accept",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"orders",
+								":id",
+								"accept"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "101"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Accepted",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/orders/:id/accept",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"orders",
+										":id",
+										"accept"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "101"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 08:28:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\"message\":\"Successfully accept appointment.\"}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/orders/:id/start_timer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/orders/:id/start_timer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"orders",
+								":id",
+								"start_timer"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "102"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Timer Started",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/orders/:id/start_timer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"orders",
+										":id",
+										"start_timer"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "102"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 08:31:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\"message\":\"Successfully start appointment time.\"}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/orders/:id/pause_timer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/orders/:id/pause_timer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"orders",
+								":id",
+								"pause_timer"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "102"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Timer Paused",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/orders/:id/pause_timer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"orders",
+										":id",
+										"pause_timer"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "102"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 08:32:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\"message\":\"Successfully pause appointment time.\"}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/orders/:id/end_timer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/orders/:id/pause_timer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"orders",
+								":id",
+								"pause_timer"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "102"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Timer Ended",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/orders/:id/pause_timer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"orders",
+										":id",
+										"pause_timer"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "102"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 08:32:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\"message\":\"Successfully pause appointment time.\"}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/payment_methods",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/payment_methods",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"payment_methods"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Payment Method List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/payment_methods",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"payment_methods"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 07:32:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"key\": \"OVO\",\n        \"label\": \"OVO Payment\",\n        \"icon\": \"http://localhost:8080/static/images/payment-method-ovo.png\"\n    },\n    {\n        \"key\": \"DANA\",\n        \"label\": \"DANA Payment\",\n        \"icon\": \"http://localhost:8080/static/images/payment-method-dana.png\"\n    },\n    {\n        \"key\": \"RUPIAH_DIGITAL\",\n        \"label\": \"BIDR Crypto\",\n        \"icon\": \"http://localhost:8080/static/images/payment-method-bidr.png\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/ratings",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order_id\": \"100\",\n    \"rating\": \"5\",\n    \"note\": \"OK\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/ratings",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"ratings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Rating Of Order 100",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order_id\": 100,\n    \"rating\": 5,\n    \"note\": \"OK\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/ratings",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"ratings"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 07:45:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Successfully submitted rating.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/activity_histories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/activity_histories?user_id=100",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"activity_histories"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "100",
+									"description": "DEV ONLY"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Activity History List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/activity_histories?user_id=100",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"activity_histories"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "100",
+											"description": "DEV ONLY"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 20 Jul 2023 08:02:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Login\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-15T15:00:00+07:00\",\n        \"updated_at\": \"2023-07-15T15:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Login\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-15T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-15T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-15T00:00:00+07:00\",\n        \"updated_at\": \"2023-07-15T00:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-12T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-12T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-11T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-11T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-10T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-10T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-09T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-09T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-08T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-08T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-07T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-07T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-06T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-06T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-05T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-05T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-04T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-04T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-04T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-03T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-03T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-02T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-02T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-02T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-07-01T10:00:00+07:00\",\n        \"updated_at\": \"2023-07-01T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-30T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-30T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-30T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-30T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-30T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-30T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-29T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-29T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-28T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-28T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-28T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-28T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-28T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-28T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-27T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-27T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-26T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-26T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-26T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-26T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-26T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-26T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-25T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-25T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-24T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-24T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-24T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-24T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-24T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-24T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-23T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-23T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-22T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-22T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-22T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-22T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-22T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-22T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-21T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-21T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-20T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-20T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-20T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-20T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-20T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-20T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-19T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-19T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-18T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-18T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-18T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-18T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-18T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-18T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-17T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-17T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-16T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-16T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-16T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-16T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-16T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-16T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-15T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-15T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-14T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-14T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-14T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-14T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-14T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-14T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-13T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-13T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-12T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-12T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-12T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-12T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-12T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-12T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-11T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-11T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-10T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-10T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-10T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-10T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-10T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-10T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-09T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-09T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-08T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-08T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-08T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-08T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-08T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-08T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-07T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-07T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-06T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-06T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-06T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-06T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-06T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-06T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-05T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-05T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-04T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-04T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-04T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-04T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Submit a Review\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-03T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-03T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-02T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-06-02T10:00:00+07:00\",\n        \"updated_at\": \"2023-06-02T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-05-31T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-31T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-05-31T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-31T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-05-29T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-29T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-05-29T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-29T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-05-27T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-27T10:00:00+07:00\"\n    },\n    {\n        \"user_id\": 100,\n        \"activity_type\": \"Make an Appointment\",\n        \"location\": \"Semarang, Indonesia\",\n        \"ip_address\": \"36.80.171.248\",\n        \"device_info\": \"Redmi Note 10 Pro\",\n        \"result\": \"\",\n        \"created_at\": \"2023-05-27T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-27T10:00:00+07:00\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "/api/v1/mock/payments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/mock/payments?user_id=1&sort_by=created_at&sort_dir=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mock",
+								"payments"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"description": "DEV ONLY && ROLE === THERAPIST"
+								},
+								{
+									"key": "sort_by",
+									"value": "created_at"
+								},
+								{
+									"key": "sort_dir",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Earning History of User 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/mock/payments?user_id=1&sort_by=created_at&sort_dir=desc",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"mock",
+										"payments"
+									],
+									"query": [
+										{
+											"key": "user_id",
+											"value": "1",
+											"description": "DEV ONLY && ROLE === THERAPIST"
+										},
+										{
+											"key": "sort_by",
+											"value": "created_at"
+										},
+										{
+											"key": "sort_dir",
+											"value": "desc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, PATCH, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, Content-Type, Accept"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jul 2023 01:49:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"order_id\": 1,\n        \"user_id\": 100,\n        \"payment_method\": \"OVO\",\n        \"payment_status\": \"SUCCESS\",\n        \"amount_paid\": 750000,\n        \"to_account\": \"-\",\n        \"sender_account\": \"-\",\n        \"payment_expired\": \"2023-06-06T10:00:00+07:00\",\n        \"payment_at\": \"2023-05-31T10:00:00+07:00\",\n        \"created_at\": \"2023-05-27T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-27T10:00:00+07:00\"\n    },\n    {\n        \"order_id\": 2,\n        \"user_id\": 100,\n        \"payment_method\": \"OVO\",\n        \"payment_status\": \"SUCCESS\",\n        \"amount_paid\": 600000,\n        \"to_account\": \"-\",\n        \"sender_account\": \"-\",\n        \"payment_expired\": \"2023-06-06T10:00:00+07:00\",\n        \"payment_at\": \"2023-05-30T10:00:00+07:00\",\n        \"created_at\": \"2023-05-27T10:00:00+07:00\",\n        \"updated_at\": \"2023-05-27T10:00:00+07:00\"\n    }\n]"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{authToken}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "authToken",
+			"value": "AUTH_TOKEN_EXAMPLE",
+			"type": "string"
+		}
+	]
+}

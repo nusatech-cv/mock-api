@@ -1,0 +1,46 @@
+#USE_CASE
+
+#REQUEST
+?
+
+Content-Type: regex||^application\/json
+
+{"order_id":"100","rating":"5","note":"OK"}
+#END_REQUEST
+
+#RESPONSE
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{"message":"Successfully submitted rating."}
+#END_RESPONSE
+
+#END_USE_CASE
+
+
+#USE_CASE
+
+#REQUEST
+?
+
+Content-Type: regex||^application\/json
+
+{}
+#END_REQUEST
+
+#RESPONSE
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{"errors":[]}
+#END_RESPONSE
+
+#END_USE_CASE
+
+

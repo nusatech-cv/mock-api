@@ -1,0 +1,30 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 36,
+        "order_id": 36,
+        "rating": 3,
+        "note": "Pijatnya keren, terapisnya cakep dan cekap, ruangannya juga asik dan enak. Oke punya dah.",
+        "created_at": "2023-07-08T10:00:00+07:00",
+        "updated_at": "2023-07-08T10:00:00+07:00",
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "user_first_name": "Bintang",
+        "user_last_name": "Kejora"
+    },
+    {
+        "id": 35,
+        "order_id": 35,
+        "rating": 5,
+        "note": "Pijatnya kece abis, terapisnya friendly dan expert, ruangannya juga comfy dan relaxing. Recomended banget dah.",
+        "created_at": "2023-07-07T10:00:00+07:00",
+        "updated_at": "2023-07-07T10:00:00+07:00",
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "user_first_name": "Bintang",
+        "user_last_name": "Kejora"
+    }
+]

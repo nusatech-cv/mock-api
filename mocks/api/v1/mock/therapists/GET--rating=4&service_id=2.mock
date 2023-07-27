@@ -1,0 +1,33 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 3,
+        "first_name": "Siti",
+        "last_name": "Rahayu",
+        "location": {
+            "x": -7.2,
+            "y": 110.4
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-3.jpg",
+        "age": 29,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 2,
+                "name": "Swedish Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    }
+]

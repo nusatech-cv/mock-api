@@ -1,0 +1,88 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 4,
+    "first_name": "Raden",
+    "last_name": "Widodo",
+    "email": "therapist_4@nusatech.id",
+    "google_id": "GOOGLE_ID_OF_THERAPIST_4",
+    "avatar": "{{MOCK_URL}}/static/images/therapist-4.jpg",
+    "balance": 330000,
+    "role": "THERAPIST",
+    "created_at": "2023-07-18T07:30:00Z",
+    "updated_at": "2023-05-15T07:30:00Z",
+    "therapist": {
+        "id": 4,
+        "user_id": 4,
+        "first_name": "Raden",
+        "last_name": "Widodo",
+        "location": {
+            "x": -7.1,
+            "y": 110.5
+        },
+        "experience_years": 8,
+        "photo": "{{MOCK_URL}}/static/images/therapist-4.jpg",
+        "age": 32,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.00",
+        "client_total": 1,
+        "review_total": 2,
+        "start_day": 1,
+        "end_day": 5,
+        "start_time": "09:00",
+        "end_time": "18:00",
+        "created_at": "2023-07-18T07:30:00Z",
+        "updated_at": "2023-05-15T07:30:00Z",
+        "services": [
+            {
+                "id": 6,
+                "name": "Facial Treatments",
+                "description": "Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya",
+                "duration": 90,
+                "minimum_duration": 1,
+                "price_per_hour": 120000,
+                "image": "{{MOCK_URL}}/static/images/service-6.jpg",
+                "icon": "{{MOCK_URL}}/static/images/service-icon-06.png"
+            },
+            {
+                "id": 7,
+                "name": "Body Scrubs and Wraps",
+                "description": "Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.",
+                "duration": 90,
+                "minimum_duration": 1,
+                "price_per_hour": 100000,
+                "image": "{{MOCK_URL}}/static/images/service-7.jpg",
+                "icon": "{{MOCK_URL}}/static/images/service-icon-07.png"
+            }
+        ],
+        "ratings": [
+            {
+                "id": 8,
+                "order_id": 8,
+                "rating": 3,
+                "note": "Pijatnya enak banget, terapisnya ramah dan profesional, ruangannya bersih dan nyaman. Saya suka sekali.",
+                "created_at": "2023-06-10T10:00:00+07:00",
+                "updated_at": "2023-06-10T10:00:00+07:00",
+                "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+                "user_first_name": "Bintang",
+                "user_last_name": "Kejora"
+            },
+            {
+                "id": 7,
+                "order_id": 7,
+                "rating": 5,
+                "note": "Pijatnya bagus banget, terapisnya ramah dan profesional, ruangannya juga bersih dan nyaman. Saya merasa segar dan rileks setelah pijat. Recomended banget deh.",
+                "created_at": "2023-06-09T10:00:00+07:00",
+                "updated_at": "2023-06-09T10:00:00+07:00",
+                "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+                "user_first_name": "Bintang",
+                "user_last_name": "Kejora"
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 5,
+    "name": "Reflexology",
+    "description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+    "duration": 90,
+    "minimum_duration": 1,
+    "price_per_hour": 100000,
+    "image": "{{MOCK_URL}}/static/images/service-5.jpg",
+    "icon": "{{MOCK_URL}}/static/images/service-icon-05.png"
+}

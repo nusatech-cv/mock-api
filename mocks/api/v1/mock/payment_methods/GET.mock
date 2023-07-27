@@ -1,0 +1,23 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "key": "OVO",
+        "label": "OVO Payment",
+        "icon": "{{MOCK_URL}}/static/images/payment-method-ovo.png"
+    },
+    {
+        "key": "DANA",
+        "label": "DANA Payment",
+        "icon": "{{MOCK_URL}}/static/images/payment-method-dana.png"
+    },
+    {
+        "key": "RUPIAH_DIGITAL",
+        "label": "BIDR Crypto",
+        "icon": "{{MOCK_URL}}/static/images/payment-method-bidr.png"
+    }
+]

@@ -1,0 +1,88 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 6,
+    "first_name": "Danu",
+    "last_name": "Santoso",
+    "email": "therapist_6@nusatech.id",
+    "google_id": "GOOGLE_ID_OF_THERAPIST_6",
+    "avatar": "{{MOCK_URL}}/static/images/therapist-6.jpg",
+    "balance": 1425000,
+    "role": "THERAPIST",
+    "created_at": "2023-07-18T07:30:00Z",
+    "updated_at": "2023-05-15T07:30:00Z",
+    "therapist": {
+        "id": 6,
+        "user_id": 6,
+        "first_name": "Danu",
+        "last_name": "Santoso",
+        "location": {
+            "x": -6.9,
+            "y": 110.35
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-6.jpg",
+        "age": 28,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "client_total": 1,
+        "review_total": 2,
+        "start_day": 1,
+        "end_day": 5,
+        "start_time": "09:00",
+        "end_time": "18:00",
+        "created_at": "2023-07-18T07:30:00Z",
+        "updated_at": "2023-05-15T07:30:00Z",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage",
+                "description": "Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.",
+                "duration": 90,
+                "minimum_duration": 1,
+                "price_per_hour": 850000,
+                "image": "{{MOCK_URL}}/static/images/service-4.jpg",
+                "icon": "{{MOCK_URL}}/static/images/service-icon-04.png"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology",
+                "description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+                "duration": 90,
+                "minimum_duration": 1,
+                "price_per_hour": 100000,
+                "image": "{{MOCK_URL}}/static/images/service-5.jpg",
+                "icon": "{{MOCK_URL}}/static/images/service-icon-05.png"
+            }
+        ],
+        "ratings": [
+            {
+                "id": 12,
+                "order_id": 12,
+                "rating": 5,
+                "note": "Pijatnya jos, terapisnya baik dan pinter, ruangannya juga rapi dan adem. Saya berasa seger dan santai abis pijat. Mantab bet dah.",
+                "created_at": "2023-06-14T10:00:00+07:00",
+                "updated_at": "2023-06-14T10:00:00+07:00",
+                "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+                "user_first_name": "Bintang",
+                "user_last_name": "Kejora"
+            },
+            {
+                "id": 11,
+                "order_id": 11,
+                "rating": 4,
+                "note": "Pijatnya jos gandos, terapisnya ngegass dan paham banget, ruangannya juga seger dan adem. Mantab bet dah.",
+                "created_at": "2023-06-13T10:00:00+07:00",
+                "updated_at": "2023-06-13T10:00:00+07:00",
+                "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+                "user_first_name": "Bintang",
+                "user_last_name": "Kejora"
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+#USE_CASE
+
+#REQUEST
+?
+
+Content-Type: regex||^application\/json
+
+{}
+#END_REQUEST
+
+#RESPONSE
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{"message":"Successfully pause appointment time."}
+#END_RESPONSE
+
+#END_USE_CASE
+
+

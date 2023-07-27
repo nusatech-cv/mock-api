@@ -1,0 +1,33 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 20,
+        "first_name": "Hendri",
+        "last_name": "Susanto",
+        "location": {
+            "x": -7.0072,
+            "y": 110.3983
+        },
+        "experience_years": 3,
+        "photo": "{{MOCK_URL}}/static/images/therapist-20.jpg",
+        "age": 26,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 5,
+                "name": "Reflexology"
+            },
+            {
+                "id": 8,
+                "name": "Shiatsu Massage"
+            }
+        ]
+    }
+]

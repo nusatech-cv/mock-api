@@ -1,0 +1,16 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+{
+    "id": 8,
+    "name": "Shiatsu Massage",
+    "description": "Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.",
+    "duration": 90,
+    "minimum_duration": 1,
+    "price_per_hour": 135000,
+    "image": "{{MOCK_URL}}/static/images/service-8.jpg",
+    "icon": "{{MOCK_URL}}/static/images/service-icon-08.png"
+}

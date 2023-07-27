@@ -1,0 +1,42 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "order_id": 3,
+        "user_id": 100,
+        "payment_method": "OVO",
+        "payment_status": "SUCCESS",
+        "amount_paid": 1050000,
+        "to_account": "-",
+        "sender_account": "-",
+        "payment_expired": "2023-06-08T10:00:00+07:00",
+        "payment_at": "2023-06-02T10:00:00+07:00",
+        "created_at": "2023-05-29T10:00:00+07:00",
+        "updated_at": "2023-05-29T10:00:00+07:00",
+        "service_name": "Hot Stone Massage",
+        "appointment_duration": 90,
+        "user_first_name": "Bintang",
+        "user_last_name": "Kejora"
+    },
+    {
+        "order_id": 4,
+        "user_id": 100,
+        "payment_method": "OVO",
+        "payment_status": "SUCCESS",
+        "amount_paid": 1275000,
+        "to_account": "-",
+        "sender_account": "-",
+        "payment_expired": "2023-06-08T10:00:00+07:00",
+        "payment_at": "2023-06-01T10:00:00+07:00",
+        "created_at": "2023-05-29T10:00:00+07:00",
+        "updated_at": "2023-05-29T10:00:00+07:00",
+        "service_name": "Aromatherapy Massage",
+        "appointment_duration": 90,
+        "user_first_name": "Bintang",
+        "user_last_name": "Kejora"
+    }
+]

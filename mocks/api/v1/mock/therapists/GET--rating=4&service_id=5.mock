@@ -1,0 +1,108 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 3,
+        "first_name": "Siti",
+        "last_name": "Rahayu",
+        "location": {
+            "x": -7.2,
+            "y": 110.4
+        },
+        "experience_years": 6,
+        "photo": "{{MOCK_URL}}/static/images/therapist-3.jpg",
+        "age": 29,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 2,
+                "name": "Swedish Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "first_name": "Danu",
+        "last_name": "Santoso",
+        "location": {
+            "x": -6.9,
+            "y": 110.35
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-6.jpg",
+        "age": 28,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "first_name": "Ratna",
+        "last_name": "Widodo",
+        "location": {
+            "x": -7.0221,
+            "y": 110.4098
+        },
+        "experience_years": 5,
+        "photo": "{{MOCK_URL}}/static/images/therapist-13.jpg",
+        "age": 28,
+        "gender": "female",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 4,
+                "name": "Aromatherapy Massage"
+            },
+            {
+                "id": 5,
+                "name": "Reflexology"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "first_name": "Hendri",
+        "last_name": "Susanto",
+        "location": {
+            "x": -7.0072,
+            "y": 110.3983
+        },
+        "experience_years": 3,
+        "photo": "{{MOCK_URL}}/static/images/therapist-20.jpg",
+        "age": 26,
+        "gender": "male",
+        "is_available": true,
+        "rating": "4.50",
+        "services": [
+            {
+                "id": 5,
+                "name": "Reflexology"
+            },
+            {
+                "id": 8,
+                "name": "Shiatsu Massage"
+            }
+        ]
+    }
+]

@@ -1,0 +1,911 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 100,
+        "uid": "LK2TR4W0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 1,
+        "service_id": 1,
+        "service_name": "Deep Tissue Massage",
+        "service_description": "Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-20T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 750000,
+        "note": "",
+        "location": {
+            "x": -7,
+            "y": 110.5
+        },
+        "created_at": "2023-07-15T00:00:00+07:00",
+        "updated_at": "2023-07-15T00:00:00+07:00"
+    },
+    {
+        "id": 101,
+        "uid": "LK2TR4W0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 1,
+        "service_id": 1,
+        "service_name": "Deep Tissue Massage",
+        "service_description": "Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit",
+        "order_status": "WAITING_CONFIRMATION",
+        "appointment_date": "2023-07-20T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 750000,
+        "note": "",
+        "location": {
+            "x": -7,
+            "y": 110.5
+        },
+        "created_at": "2023-07-15T00:00:00+07:00",
+        "updated_at": "2023-07-15T00:00:00+07:00"
+    },
+    {
+        "id": 102,
+        "uid": "LK2TR4W0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 1,
+        "service_id": 1,
+        "service_name": "Deep Tissue Massage",
+        "service_description": "Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit",
+        "order_status": "PAID",
+        "appointment_date": "2023-07-20T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 750000,
+        "note": "",
+        "location": {
+            "x": -7,
+            "y": 110.5
+        },
+        "created_at": "2023-07-15T00:00:00+07:00",
+        "updated_at": "2023-07-15T00:00:00+07:00"
+    },
+    {
+        "id": 39,
+        "uid": "LJNPCDC0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 20,
+        "service_id": 5,
+        "service_name": "Reflexology",
+        "service_description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-09T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.475,
+            "y": 110.785
+        },
+        "created_at": "2023-07-04T10:00:00+07:00",
+        "updated_at": "2023-07-04T10:00:00+07:00"
+    },
+    {
+        "id": 40,
+        "uid": "LJNPCDC0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 20,
+        "service_id": 8,
+        "service_name": "Shiatsu Massage",
+        "service_description": "Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-10T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 202500,
+        "note": "",
+        "location": {
+            "x": -7.19,
+            "y": 110.88
+        },
+        "created_at": "2023-07-04T10:00:00+07:00",
+        "updated_at": "2023-07-04T10:00:00+07:00"
+    },
+    {
+        "id": 37,
+        "uid": "LJKUGO00",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 19,
+        "service_id": 2,
+        "service_name": "Swedish Massage",
+        "service_description": "Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-07T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 600000,
+        "note": "",
+        "location": {
+            "x": -7.45,
+            "y": 110.77
+        },
+        "created_at": "2023-07-02T10:00:00+07:00",
+        "updated_at": "2023-07-02T10:00:00+07:00"
+    },
+    {
+        "id": 38,
+        "uid": "LJKUGO00",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 19,
+        "service_id": 8,
+        "service_name": "Shiatsu Massage",
+        "service_description": "Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-08T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 202500,
+        "note": "",
+        "location": {
+            "x": -7.18,
+            "y": 110.86
+        },
+        "created_at": "2023-07-02T10:00:00+07:00",
+        "updated_at": "2023-07-02T10:00:00+07:00"
+    },
+    {
+        "id": 35,
+        "uid": "LJHZKYO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 18,
+        "service_id": 1,
+        "service_name": "Deep Tissue Massage",
+        "service_description": "Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-05T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 750000,
+        "note": "",
+        "location": {
+            "x": -7.425,
+            "y": 110.755
+        },
+        "created_at": "2023-06-30T10:00:00+07:00",
+        "updated_at": "2023-06-30T10:00:00+07:00"
+    },
+    {
+        "id": 36,
+        "uid": "LJHZKYO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 18,
+        "service_id": 7,
+        "service_name": "Body Scrubs and Wraps",
+        "service_description": "Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-06T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.17,
+            "y": 110.84
+        },
+        "created_at": "2023-06-30T10:00:00+07:00",
+        "updated_at": "2023-06-30T10:00:00+07:00"
+    },
+    {
+        "id": 33,
+        "uid": "LJF4P9C0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 17,
+        "service_id": 4,
+        "service_name": "Aromatherapy Massage",
+        "service_description": "Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-03T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 1275000,
+        "note": "",
+        "location": {
+            "x": -7.4,
+            "y": 110.74
+        },
+        "created_at": "2023-06-28T10:00:00+07:00",
+        "updated_at": "2023-06-28T10:00:00+07:00"
+    },
+    {
+        "id": 34,
+        "uid": "LJF4P9C0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 17,
+        "service_id": 6,
+        "service_name": "Facial Treatments",
+        "service_description": "Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-04T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 180000,
+        "note": "",
+        "location": {
+            "x": -7.16,
+            "y": 110.82
+        },
+        "created_at": "2023-06-28T10:00:00+07:00",
+        "updated_at": "2023-06-28T10:00:00+07:00"
+    },
+    {
+        "id": 31,
+        "uid": "LJC9TK00",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 16,
+        "service_id": 2,
+        "service_name": "Swedish Massage",
+        "service_description": "Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-01T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 600000,
+        "note": "",
+        "location": {
+            "x": -7.375,
+            "y": 110.725
+        },
+        "created_at": "2023-06-26T10:00:00+07:00",
+        "updated_at": "2023-06-26T10:00:00+07:00"
+    },
+    {
+        "id": 32,
+        "uid": "LJC9TK00",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 16,
+        "service_id": 5,
+        "service_name": "Reflexology",
+        "service_description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-07-02T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.15,
+            "y": 110.8
+        },
+        "created_at": "2023-06-26T10:00:00+07:00",
+        "updated_at": "2023-06-26T10:00:00+07:00"
+    },
+    {
+        "id": 29,
+        "uid": "LJ9EXUO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 15,
+        "service_id": 3,
+        "service_name": "Hot Stone Massage",
+        "service_description": "Hot Stone Massage adalah jenis terapi pijat yang menggunakan batu panas sebagai alat utama. Batu-batu tersebut, biasanya batu basalt yang telah dipanaskan, ditempatkan pada titik-titik tertentu di seluruh tubuh untuk membantu meredakan ketegangan otot dan meningkatkan aliran darah. Teknik ini menghasilkan sensasi hangat yang mendalam dan relaksasi yang nyaman, sehingga sangat efektif untuk membantu meredakan stres dan meningkatkan kesejahteraan secara keseluruhan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-29T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 1050000,
+        "note": "",
+        "location": {
+            "x": -7.35,
+            "y": 110.71
+        },
+        "created_at": "2023-06-24T10:00:00+07:00",
+        "updated_at": "2023-06-24T10:00:00+07:00"
+    },
+    {
+        "id": 30,
+        "uid": "LJ9EXUO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 15,
+        "service_id": 7,
+        "service_name": "Body Scrubs and Wraps",
+        "service_description": "Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-30T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.14,
+            "y": 110.78
+        },
+        "created_at": "2023-06-24T10:00:00+07:00",
+        "updated_at": "2023-06-24T10:00:00+07:00"
+    },
+    {
+        "id": 27,
+        "uid": "LJ6K25C0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 14,
+        "service_id": 1,
+        "service_name": "Deep Tissue Massage",
+        "service_description": "Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-27T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 750000,
+        "note": "",
+        "location": {
+            "x": -7.325,
+            "y": 110.695
+        },
+        "created_at": "2023-06-22T10:00:00+07:00",
+        "updated_at": "2023-06-22T10:00:00+07:00"
+    },
+    {
+        "id": 28,
+        "uid": "LJ6K25C0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 14,
+        "service_id": 6,
+        "service_name": "Facial Treatments",
+        "service_description": "Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-28T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 180000,
+        "note": "",
+        "location": {
+            "x": -7.13,
+            "y": 110.76
+        },
+        "created_at": "2023-06-22T10:00:00+07:00",
+        "updated_at": "2023-06-22T10:00:00+07:00"
+    },
+    {
+        "id": 25,
+        "uid": "LJ3P6G00",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 13,
+        "service_id": 4,
+        "service_name": "Aromatherapy Massage",
+        "service_description": "Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-25T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 1275000,
+        "note": "",
+        "location": {
+            "x": -7.3,
+            "y": 110.68
+        },
+        "created_at": "2023-06-20T10:00:00+07:00",
+        "updated_at": "2023-06-20T10:00:00+07:00"
+    },
+    {
+        "id": 26,
+        "uid": "LJ3P6G00",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 13,
+        "service_id": 5,
+        "service_name": "Reflexology",
+        "service_description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-26T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.12,
+            "y": 110.74
+        },
+        "created_at": "2023-06-20T10:00:00+07:00",
+        "updated_at": "2023-06-20T10:00:00+07:00"
+    },
+    {
+        "id": 23,
+        "uid": "LJ0UAQO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 12,
+        "service_id": 2,
+        "service_name": "Swedish Massage",
+        "service_description": "Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-23T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 600000,
+        "note": "",
+        "location": {
+            "x": -7.275,
+            "y": 110.665
+        },
+        "created_at": "2023-06-18T10:00:00+07:00",
+        "updated_at": "2023-06-18T10:00:00+07:00"
+    },
+    {
+        "id": 24,
+        "uid": "LJ0UAQO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 12,
+        "service_id": 8,
+        "service_name": "Shiatsu Massage",
+        "service_description": "Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-24T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 202500,
+        "note": "",
+        "location": {
+            "x": -7.11,
+            "y": 110.72
+        },
+        "created_at": "2023-06-18T10:00:00+07:00",
+        "updated_at": "2023-06-18T10:00:00+07:00"
+    },
+    {
+        "id": 21,
+        "uid": "LIXZF1C0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 11,
+        "service_id": 4,
+        "service_name": "Aromatherapy Massage",
+        "service_description": "Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-21T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 1275000,
+        "note": "",
+        "location": {
+            "x": -7.25,
+            "y": 110.65
+        },
+        "created_at": "2023-06-16T10:00:00+07:00",
+        "updated_at": "2023-06-16T10:00:00+07:00"
+    },
+    {
+        "id": 22,
+        "uid": "LIXZF1C0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 11,
+        "service_id": 7,
+        "service_name": "Body Scrubs and Wraps",
+        "service_description": "Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-22T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.1,
+            "y": 110.7
+        },
+        "created_at": "2023-06-16T10:00:00+07:00",
+        "updated_at": "2023-06-16T10:00:00+07:00"
+    },
+    {
+        "id": 19,
+        "uid": "LIV4JC00",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 10,
+        "service_id": 1,
+        "service_name": "Deep Tissue Massage",
+        "service_description": "Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-19T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 750000,
+        "note": "",
+        "location": {
+            "x": -7.225,
+            "y": 110.635
+        },
+        "created_at": "2023-06-14T10:00:00+07:00",
+        "updated_at": "2023-06-14T10:00:00+07:00"
+    },
+    {
+        "id": 20,
+        "uid": "LIV4JC00",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 10,
+        "service_id": 6,
+        "service_name": "Facial Treatments",
+        "service_description": "Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-20T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 180000,
+        "note": "",
+        "location": {
+            "x": -7.09,
+            "y": 110.68
+        },
+        "created_at": "2023-06-14T10:00:00+07:00",
+        "updated_at": "2023-06-14T10:00:00+07:00"
+    },
+    {
+        "id": 17,
+        "uid": "LIS9NMO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 9,
+        "service_id": 5,
+        "service_name": "Reflexology",
+        "service_description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-17T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.2,
+            "y": 110.62
+        },
+        "created_at": "2023-06-12T10:00:00+07:00",
+        "updated_at": "2023-06-12T10:00:00+07:00"
+    },
+    {
+        "id": 18,
+        "uid": "LIS9NMO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 9,
+        "service_id": 8,
+        "service_name": "Shiatsu Massage",
+        "service_description": "Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-18T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 202500,
+        "note": "",
+        "location": {
+            "x": -7.08,
+            "y": 110.66
+        },
+        "created_at": "2023-06-12T10:00:00+07:00",
+        "updated_at": "2023-06-12T10:00:00+07:00"
+    },
+    {
+        "id": 15,
+        "uid": "LIPERXC0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 8,
+        "service_id": 2,
+        "service_name": "Swedish Massage",
+        "service_description": "Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-15T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 600000,
+        "note": "",
+        "location": {
+            "x": -7.175,
+            "y": 110.605
+        },
+        "created_at": "2023-06-10T10:00:00+07:00",
+        "updated_at": "2023-06-10T10:00:00+07:00"
+    },
+    {
+        "id": 16,
+        "uid": "LIPERXC0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 8,
+        "service_id": 7,
+        "service_name": "Body Scrubs and Wraps",
+        "service_description": "Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-16T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.07,
+            "y": 110.64
+        },
+        "created_at": "2023-06-10T10:00:00+07:00",
+        "updated_at": "2023-06-10T10:00:00+07:00"
+    },
+    {
+        "id": 13,
+        "uid": "LIMJW800",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 7,
+        "service_id": 3,
+        "service_name": "Hot Stone Massage",
+        "service_description": "Hot Stone Massage adalah jenis terapi pijat yang menggunakan batu panas sebagai alat utama. Batu-batu tersebut, biasanya batu basalt yang telah dipanaskan, ditempatkan pada titik-titik tertentu di seluruh tubuh untuk membantu meredakan ketegangan otot dan meningkatkan aliran darah. Teknik ini menghasilkan sensasi hangat yang mendalam dan relaksasi yang nyaman, sehingga sangat efektif untuk membantu meredakan stres dan meningkatkan kesejahteraan secara keseluruhan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-13T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 1050000,
+        "note": "",
+        "location": {
+            "x": -7.15,
+            "y": 110.59
+        },
+        "created_at": "2023-06-08T10:00:00+07:00",
+        "updated_at": "2023-06-08T10:00:00+07:00"
+    },
+    {
+        "id": 14,
+        "uid": "LIMJW800",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 7,
+        "service_id": 6,
+        "service_name": "Facial Treatments",
+        "service_description": "Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-14T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 180000,
+        "note": "",
+        "location": {
+            "x": -7.06,
+            "y": 110.62
+        },
+        "created_at": "2023-06-08T10:00:00+07:00",
+        "updated_at": "2023-06-08T10:00:00+07:00"
+    },
+    {
+        "id": 11,
+        "uid": "LIJP0IO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 6,
+        "service_id": 4,
+        "service_name": "Aromatherapy Massage",
+        "service_description": "Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-11T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 1275000,
+        "note": "",
+        "location": {
+            "x": -7.125,
+            "y": 110.575
+        },
+        "created_at": "2023-06-06T10:00:00+07:00",
+        "updated_at": "2023-06-06T10:00:00+07:00"
+    },
+    {
+        "id": 12,
+        "uid": "LIJP0IO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 6,
+        "service_id": 5,
+        "service_name": "Reflexology",
+        "service_description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-12T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.05,
+            "y": 110.6
+        },
+        "created_at": "2023-06-06T10:00:00+07:00",
+        "updated_at": "2023-06-06T10:00:00+07:00"
+    },
+    {
+        "id": 9,
+        "uid": "LIGU4TC0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 5,
+        "service_id": 1,
+        "service_name": "Deep Tissue Massage",
+        "service_description": "Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-09T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 750000,
+        "note": "",
+        "location": {
+            "x": -7.1,
+            "y": 110.56
+        },
+        "created_at": "2023-06-04T10:00:00+07:00",
+        "updated_at": "2023-06-04T10:00:00+07:00"
+    },
+    {
+        "id": 10,
+        "uid": "LIGU4TC0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 5,
+        "service_id": 8,
+        "service_name": "Shiatsu Massage",
+        "service_description": "Shiatsu massage adalah salah satu jenis pijat yang berasal dari Jepang. Shiatsu berarti tekanan jari dalam bahasa Jepang, karena pijat ini menggunakan jari, ibu jari, telapak tangan, dan kadang-kadang siku atau lutut untuk memberikan tekanan pada titik-titik atau saluran tertentu di tubuh1. Pijat ini dilakukan melalui pakaian longgar dan tidak menggunakan minyak.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-10T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 202500,
+        "note": "",
+        "location": {
+            "x": -7.04,
+            "y": 110.58
+        },
+        "created_at": "2023-06-04T10:00:00+07:00",
+        "updated_at": "2023-06-04T10:00:00+07:00"
+    },
+    {
+        "id": 7,
+        "uid": "LIDZ9400",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 4,
+        "service_id": 6,
+        "service_name": "Facial Treatments",
+        "service_description": "Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-07T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 180000,
+        "note": "",
+        "location": {
+            "x": -7.075,
+            "y": 110.545
+        },
+        "created_at": "2023-06-02T10:00:00+07:00",
+        "updated_at": "2023-06-02T10:00:00+07:00"
+    },
+    {
+        "id": 8,
+        "uid": "LIDZ9400",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 4,
+        "service_id": 7,
+        "service_name": "Body Scrubs and Wraps",
+        "service_description": "Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-08T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.03,
+            "y": 110.56
+        },
+        "created_at": "2023-06-02T10:00:00+07:00",
+        "updated_at": "2023-06-02T10:00:00+07:00"
+    },
+    {
+        "id": 5,
+        "uid": "LIB4DEO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 3,
+        "service_id": 2,
+        "service_name": "Swedish Massage",
+        "service_description": "Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-05T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 600000,
+        "note": "",
+        "location": {
+            "x": -7.05,
+            "y": 110.53
+        },
+        "created_at": "2023-05-31T10:00:00+07:00",
+        "updated_at": "2023-05-31T10:00:00+07:00"
+    },
+    {
+        "id": 6,
+        "uid": "LIB4DEO0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 3,
+        "service_id": 5,
+        "service_name": "Reflexology",
+        "service_description": "Reflexology adalah teknik pijat khusus yang menekankan pada titik-titik refleksi tertentu di tangan, kaki, dan telinga yang sesuai dengan area dan organ lainnya di dalam tubuh. Reflexology berfungsi untuk meningkatkan keseimbangan dan kesejahteraan tubuh secara keseluruhan. Ini bisa menjadi pengalaman yang sangat menenangkan dan relaksasi, sekaligus berfungsi untuk membantu tubuh meredakan stres dan ketegangan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-06T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.02,
+            "y": 110.54
+        },
+        "created_at": "2023-05-31T10:00:00+07:00",
+        "updated_at": "2023-05-31T10:00:00+07:00"
+    },
+    {
+        "id": 3,
+        "uid": "LI89HPC0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 2,
+        "service_id": 3,
+        "service_name": "Hot Stone Massage",
+        "service_description": "Hot Stone Massage adalah jenis terapi pijat yang menggunakan batu panas sebagai alat utama. Batu-batu tersebut, biasanya batu basalt yang telah dipanaskan, ditempatkan pada titik-titik tertentu di seluruh tubuh untuk membantu meredakan ketegangan otot dan meningkatkan aliran darah. Teknik ini menghasilkan sensasi hangat yang mendalam dan relaksasi yang nyaman, sehingga sangat efektif untuk membantu meredakan stres dan meningkatkan kesejahteraan secara keseluruhan.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-03T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 1050000,
+        "note": "",
+        "location": {
+            "x": -7.025,
+            "y": 110.515
+        },
+        "created_at": "2023-05-29T10:00:00+07:00",
+        "updated_at": "2023-05-29T10:00:00+07:00"
+    },
+    {
+        "id": 4,
+        "uid": "LI89HPC0",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 2,
+        "service_id": 4,
+        "service_name": "Aromatherapy Massage",
+        "service_description": "Aromatherapy Massage adalah jenis terapi pijat yang menggabungkan penggunaan minyak esensial aromatik untuk meningkatkan manfaat pijat. Minyak esensial yang diekstrak dari tumbuhan, bunga, dan rempah-rempah digunakan untuk meningkatkan suasana hati, mengurangi stres, dan mendukung perasaan kesejahteraan. Pijat aromaterapi tidak hanya melibatkan teknik pijat yang menenangkan dan mengurangi ketegangan otot, tetapi juga memberikan pengalaman multisensorial yang dapat meremajakan pikiran dan tubuh.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-04T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 1275000,
+        "note": "",
+        "location": {
+            "x": -7.01,
+            "y": 110.52
+        },
+        "created_at": "2023-05-29T10:00:00+07:00",
+        "updated_at": "2023-05-29T10:00:00+07:00"
+    },
+    {
+        "id": 1,
+        "uid": "LI5EM000",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 1,
+        "service_id": 1,
+        "service_name": "Deep Tissue Massage",
+        "service_description": "Deep Tissue Massage adalah terapi pijat yang menargetkan kelompok otot dan jaringan ikat yang lebih dalam. Tujuannya adalah meredakan nyeri dan ketegangan otot kronis, meningkatkan rentang gerak, dan memperbaiki postur. Terapis menggunakan tekanan kuat untuk menjangkau lapisan yang lebih dalam dari otot dan jaringan ikat. Sesinya biasanya berlangsung antara 60 hingga 90 menit",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-01T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 750000,
+        "note": "",
+        "location": {
+            "x": -7,
+            "y": 110.5
+        },
+        "created_at": "2023-05-27T10:00:00+07:00",
+        "updated_at": "2023-05-27T10:00:00+07:00"
+    },
+    {
+        "id": 2,
+        "uid": "LI5EM000",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 1,
+        "service_id": 2,
+        "service_name": "Swedish Massage",
+        "service_description": "Swedish Massage adalah jenis terapi pijat yang paling umum dan terkenal. Teknik ini menggunakan serangkaian gerakan berupa menggosok, mengknead, dan mengetuk untuk meredakan ketegangan otot, mempromosikan relaksasi, dan meningkatkan sirkulasi darah. Manfaat lainnya termasuk peningkatan fleksibilitas dan kesejahteraan emosional. Swedish Massage adalah cara yang sempurna untuk meredakan stres dan memanjakan diri Anda.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-02T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 600000,
+        "note": "",
+        "location": {
+            "x": -7,
+            "y": 110.5
+        },
+        "created_at": "2023-05-27T10:00:00+07:00",
+        "updated_at": "2023-05-27T10:00:00+07:00"
+    }
+]

@@ -1,0 +1,50 @@
+HTTP/2 200
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: Origin, Content-Type, Accept
+Content-Type: application/json
+
+[
+    {
+        "id": 7,
+        "uid": "LIDZ9400",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 4,
+        "service_id": 6,
+        "service_name": "Facial Treatments",
+        "service_description": "Ini melibatkan berbagai perawatan wajah, seperti pembersihan, pengeksfoliasian, pemijatan, dan perawatan lainnya",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-07T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 180000,
+        "note": "",
+        "location": {
+            "x": -7.075,
+            "y": 110.545
+        },
+        "created_at": "2023-06-02T10:00:00+07:00",
+        "updated_at": "2023-06-02T10:00:00+07:00"
+    },
+    {
+        "id": 8,
+        "uid": "LIDZ9400",
+        "user_id": 100,
+        "user_avatar": "{{MOCK_URL}}/static/images/user-avatar-1.png",
+        "therapist_id": 4,
+        "service_id": 7,
+        "service_name": "Body Scrubs and Wraps",
+        "service_description": "Perawatan wajah atau Facial Treatments adalah rangkaian perawatan yang dirancang untuk memperbaiki dan merawat kulit wajah. Perawatan ini mungkin mencakup pembersihan mendalam, eksfoliasi, ekstraksi komedo, pengaplikasian masker, serum, pelembab, dan perlindungan sinar matahari. Perawatan wajah juga seringkali menyertakan pijatan ringan pada wajah dan leher untuk meningkatkan sirkulasi dan kekenyalan kulit.",
+        "order_status": "DONE",
+        "appointment_date": "2023-06-08T10:00:00+07:00",
+        "appointment_duration": 90,
+        "total_price": 150000,
+        "note": "",
+        "location": {
+            "x": -7.03,
+            "y": 110.56
+        },
+        "created_at": "2023-06-02T10:00:00+07:00",
+        "updated_at": "2023-06-02T10:00:00+07:00"
+    }
+]

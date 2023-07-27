@@ -1,0 +1,28 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Mock",
+      "type": "node",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/mocks/index.js",
+      "runtimeExecutable": "${userHome}/.nvm/versions/node/v20.4.0/bin/node"
+    },
+    {
+      "name": "Launch Generate Mock",
+      "type": "node",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/scripts/generate-mock.js",
+      "runtimeExecutable": "${userHome}/.nvm/versions/node/v20.4.0/bin/node"
+    }
+  ]
+}
